@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<KinematicModel MODEL="Real_Lab_FullBody" VERSION="3.2">
+	<Parameters>
+		<StaticParameter NAME="RASI__PelvisOC_ocst_x" VALUE="-161.16799926757813" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASI__PelvisOC_ocst_y" VALUE="-18.340900421142578" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASI__PelvisOC_ocst_z" VALUE="8.8817799618365161e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RPSI__PelvisOC_ocst_x" VALUE="64.510200500488281" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RPSI__PelvisOC_ocst_y" VALUE="-18.340900421142578" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RPSI__PelvisOC_ocst_z" VALUE="-2.6645399177815856e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LPSI__PelvisOC_ocst_x" VALUE="96.657997131347656" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LPSI__PelvisOC_ocst_y" VALUE="36.681800842285156" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LPSI__PelvisOC_ocst_z" VALUE="8.8817799618365161e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LASI__PelvisOC_ocst_x" VALUE="-33.692901611328125" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LASI__PelvisOC_ocst_y" VALUE="233.21200561523438" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LASI__PelvisOC_ocst_z" VALUE="16.093000411987305" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RSAT__RThighOC_ocst_x" VALUE="-110.83899688720703" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RSAT__RThighOC_ocst_y" VALUE="-47.8218994140625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RSAT__RThighOC_ocst_z" VALUE="-1.3322699588907928e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLAT__RThighOC_ocst_x" VALUE="73.951698303222656" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLAT__RThighOC_ocst_y" VALUE="-47.8218994140625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLAT__RThighOC_ocst_z" VALUE="4.440889980918258e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RIAT__RThighOC_ocst_x" VALUE="36.887199401855469" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RIAT__RThighOC_ocst_y" VALUE="95.643898010253906" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RIAT__RThighOC_ocst_z" VALUE="1.3322699588907928e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFIB__LThighOC_ocst_x" VALUE="-218.98599243164063" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFIB__LThighOC_ocst_y" VALUE="-12.611499786376953" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFIB__LThighOC_ocst_z" VALUE="8.8817799618365161e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASH__LThighOC_ocst_x" VALUE="23.957000732421875" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASH__LThighOC_ocst_y" VALUE="-12.611499786376953" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASH__LThighOC_ocst_z" VALUE="2.6645399177815856e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLML__LThighOC_ocst_x" VALUE="195.02900695800781" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLML__LThighOC_ocst_y" VALUE="25.222900390625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLML__LThighOC_ocst_z" VALUE="-2.6645399177815856e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMML__LThighOC_ocst_x" VALUE="162.02000427246094" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMML__LThighOC_ocst_y" VALUE="123.43599700927734" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMML__LThighOC_ocst_z" VALUE="-16.176900863647461" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAT__LThighOC_ocst_x" VALUE="-69.433799743652344" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAT__LThighOC_ocst_y" VALUE="-40.242500305175781" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAT__LThighOC_ocst_z" VALUE="1.3322699588907928e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAT__LThighOC_ocst_x" VALUE="64.009902954101563" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAT__LThighOC_ocst_y" VALUE="-40.242500305175781" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAT__LThighOC_ocst_z" VALUE="-1.3322699588907928e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLAT__LThighOC_ocst_x" VALUE="5.4238801002502441" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLAT__LThighOC_ocst_y" VALUE="80.484901428222656" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLAT__LThighOC_ocst_z" VALUE="8.8817799618365161e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFIB__RShankOC_ocst_x" VALUE="-206.58500671386719" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFIB__RShankOC_ocst_y" VALUE="-32.948600769042969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFIB__RShankOC_ocst_z" VALUE="-1.0658100378820035e-14" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASH__RShankOC_ocst_x" VALUE="37.598800659179688" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASH__RShankOC_ocst_y" VALUE="-32.948600769042969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RASH__RShankOC_ocst_z" VALUE="3.5527100789104751e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLML__RShankOC_ocst_x" VALUE="168.98599243164063" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLML__RShankOC_ocst_y" VALUE="65.897201538085938" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLML__RShankOC_ocst_z" VALUE="7.1054298986998436e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMML__RShankOC_ocst_x" VALUE="176.00399780273438" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMML__RShankOC_ocst_y" VALUE="1.1010299921035767" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMML__RShankOC_ocst_z" VALUE="76.399200439453125" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LFIB__LShankOC_ocst_x" VALUE="-174.16499328613281" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LFIB__LShankOC_ocst_y" VALUE="-16.5802001953125" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LFIB__LShankOC_ocst_z" VALUE="0" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMML__LShankOC_ocst_x" VALUE="219.78300476074219" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMML__LShankOC_ocst_y" VALUE="-16.5802001953125" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMML__LShankOC_ocst_z" VALUE="-7.1054298986998436e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LASH__LShankOC_ocst_x" VALUE="-45.618000030517578" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LASH__LShankOC_ocst_y" VALUE="33.160301208496094" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LASH__LShankOC_ocst_z" VALUE="3.5527100789104751e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLML__LShankOC_ocst_x" VALUE="212.43800354003906" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLML__LShankOC_ocst_y" VALUE="2.8481400012969971" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLML__LShankOC_ocst_z" VALUE="-100.69400024414063" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RCAL__RFootOC_ocst_x" VALUE="-137.85800170898438" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RCAL__RFootOC_ocst_y" VALUE="-36.823600769042969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RCAL__RFootOC_ocst_z" VALUE="2.9605900560060211e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMT5__RFootOC_ocst_x" VALUE="56.862998962402344" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMT5__RFootOC_ocst_y" VALUE="-36.823600769042969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMT5__RFootOC_ocst_z" VALUE="-5.9211901705282909e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RTOE__RFootOC_ocst_x" VALUE="80.995201110839844" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RTOE__RFootOC_ocst_y" VALUE="73.647102355957031" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RTOE__RFootOC_ocst_z" VALUE="2.9605900560060211e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LCAL__LFootOC_ocst_x" VALUE="-134.17399597167969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LCAL__LFootOC_ocst_y" VALUE="-37.812198638916016" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LCAL__LFootOC_ocst_z" VALUE="2.5165098988205823e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMT5__LFootOC_ocst_x" VALUE="58.429500579833984" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMT5__LFootOC_ocst_y" VALUE="-37.812198638916016" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMT5__LFootOC_ocst_z" VALUE="-1.0362100268479046e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LTOE__LFootOC_ocst_x" VALUE="75.744697570800781" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LTOE__LFootOC_ocst_y" VALUE="75.624298095703125" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LTOE__LFootOC_ocst_z" VALUE="-1.4802999778517961e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="PelvisOC__RThighOC_score_x" VALUE="-120.21099853515625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="PelvisOC__RThighOC_score_y" VALUE="-0.6423640251159668" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="PelvisOC__RThighOC_score_z" VALUE="83.93609619140625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__PelvisOC_score_x" VALUE="-142.47085571289063" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__PelvisOC_score_y" VALUE="-200.52597045898438" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__PelvisOC_score_z" VALUE="-62.515857696533203" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="PelvisOC__LThighOC_score_x" VALUE="-17.695699691772461" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="PelvisOC__LThighOC_score_y" VALUE="175.32200622558594" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="PelvisOC__LThighOC_score_z" VALUE="99.898101806640625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__PelvisOC_score_x" VALUE="-77.586898803710938" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__PelvisOC_score_y" VALUE="-237.05296325683594" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__PelvisOC_score_z" VALUE="92.978172302246094" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__RShankOC_score_x" VALUE="172.87576293945313" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__RShankOC_score_y" VALUE="119.32012176513672" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__RShankOC_score_z" VALUE="9.9824666976928711" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__RShankOC_sara_x" VALUE="-0.32650166749954224" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__RShankOC_sara_y" VALUE="0.26199299097061157" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RThighOC__RShankOC_sara_z" VALUE="-0.9081609845161438" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RThighOC_score_x" VALUE="-244.02560424804688" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RThighOC_score_y" VALUE="-69.160285949707031" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RThighOC_score_z" VALUE="20.277446746826172" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RThighOC_sara_x" VALUE="0.21208655834197998" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RThighOC_sara_y" VALUE="-0.34962683916091919" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RThighOC_sara_z" VALUE="0.91256803274154663" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__LShankOC_score_x" VALUE="128.97709655761719" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__LShankOC_score_y" VALUE="153.21823120117188" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__LShankOC_score_z" VALUE="5.2122006416320801" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__LShankOC_sara_x" VALUE="0.49870091676712036" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__LShankOC_sara_y" VALUE="-0.27919870615005493" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LThighOC__LShankOC_sara_z" VALUE="-0.82057631015777588" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LThighOC_score_x" VALUE="-208.6756591796875" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LThighOC_score_y" VALUE="-35.425605773925781" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LThighOC_score_z" VALUE="39.460315704345703" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LThighOC_sara_x" VALUE="-0.35000374913215637" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LThighOC_sara_y" VALUE="0.20723310112953186" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LThighOC_sara_z" VALUE="-0.91353809833526611" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RFootOC_score_x" VALUE="192.97439575195313" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RFootOC_score_y" VALUE="59.648166656494141" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RShankOC__RFootOC_score_z" VALUE="33.390438079833984" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFootOC__RShankOC_score_x" VALUE="-74.578765869140625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFootOC__RShankOC_score_y" VALUE="-20.323627471923828" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RFootOC__RShankOC_score_z" VALUE="25.619289398193359" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LFootOC_score_x" VALUE="233.87261962890625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LFootOC_score_y" VALUE="-16.151538848876953" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LShankOC__LFootOC_score_z" VALUE="-59.586235046386719" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LFootOC__LShankOC_score_x" VALUE="-81.926651000976563" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LFootOC__LShankOC_score_y" VALUE="-10.427384376525879" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LFootOC__LShankOC_score_z" VALUE="-15.228405952453613" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LABK__Torso_ocst_x" VALUE="-54.981098175048828" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LABK__Torso_ocst_y" VALUE="-79.658302307128906" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LABK__Torso_ocst_z" VALUE="0" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RABK__Torso_ocst_x" VALUE="112.40299987792969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RABK__Torso_ocst_y" VALUE="-79.658302307128906" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RABK__Torso_ocst_z" VALUE="0" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="CLAV__Torso_ocst_x" VALUE="-57.421901702880859" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="CLAV__Torso_ocst_y" VALUE="159.31700134277344" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="CLAV__Torso_ocst_z" VALUE="0" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="CEV7__Torso_ocst_x" VALUE="-112.97599792480469" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="CEV7__Torso_ocst_y" VALUE="19.289699554443359" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="CEV7__Torso_ocst_z" VALUE="101.75299835205078" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RACR__Torso_ocst_x" VALUE="49.696498870849609" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RACR__Torso_ocst_y" VALUE="98.157699584960938" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RACR__Torso_ocst_z" VALUE="188.71099853515625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LACR__Torso_ocst_x" VALUE="-222.52299499511719" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LACR__Torso_ocst_y" VALUE="14.441800117492676" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LACR__Torso_ocst_z" VALUE="-70.157203674316406" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LPAH__Head_ocst_x" VALUE="-87.64959716796875" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LPAH__Head_ocst_y" VALUE="-48.132999420166016" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LPAH__Head_ocst_z" VALUE="-2.2204500197172533e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LAAH__Head_ocst_x" VALUE="32.806098937988281" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LAAH__Head_ocst_y" VALUE="-48.132999420166016" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LAAH__Head_ocst_z" VALUE="-2.2204500197172533e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RAAH__Head_ocst_x" VALUE="54.843498229980469" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RAAH__Head_ocst_y" VALUE="96.265998840332031" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RAAH__Head_ocst_z" VALUE="2.2204500197172533e-16" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RPAH__Head_ocst_x" VALUE="-116.19100189208984" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RPAH__Head_ocst_y" VALUE="77.175697326660156" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RPAH__Head_ocst_z" VALUE="-7.8653101921081543" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAT__RightUpperArm_ocst_x" VALUE="-88.052902221679688" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAT__RightUpperArm_ocst_y" VALUE="-29.398099899291992" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAT__RightUpperArm_ocst_z" VALUE="2.842169926600864e-14" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAT__RightUpperArm_ocst_x" VALUE="60.833698272705078" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAT__RightUpperArm_ocst_y" VALUE="-29.398099899291992" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAT__RightUpperArm_ocst_z" VALUE="-5.6843398532017281e-14" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLAT__RightUpperArm_ocst_x" VALUE="27.219200134277344" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLAT__RightUpperArm_ocst_y" VALUE="58.796100616455078" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLAT__RightUpperArm_ocst_z" VALUE="0" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RSAA__RightUpperArm_ocst_x" VALUE="-88.136100769042969" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RSAA__RightUpperArm_ocst_y" VALUE="-26.150600433349609" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RSAA__RightUpperArm_ocst_z" VALUE="7.1054298986998436e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RIAA__RightUpperArm_ocst_x" VALUE="35.46099853515625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RIAA__RightUpperArm_ocst_y" VALUE="-26.150600433349609" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RIAA__RightUpperArm_ocst_z" VALUE="3.5527100789104751e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLHE__RightUpperArm_ocst_x" VALUE="52.675098419189453" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLHE__RightUpperArm_ocst_y" VALUE="52.301101684570313" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLHE__RightUpperArm_ocst_z" VALUE="3.5527100789104751e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMHE__RightUpperArm_ocst_x" VALUE="52.333400726318359" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMHE__RightUpperArm_ocst_y" VALUE="56.987098693847656" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RMHE__RightUpperArm_ocst_z" VALUE="-110.74600219726563" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAA__LeftUpperArm_ocst_x" VALUE="-85.649200439453125" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAA__LeftUpperArm_ocst_y" VALUE="-25.786800384521484" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LSAA__LeftUpperArm_ocst_z" VALUE="3.5527100789104751e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAA__LeftUpperArm_ocst_x" VALUE="16.23590087890625" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAA__LeftUpperArm_ocst_y" VALUE="-25.786800384521484" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LIAA__LeftUpperArm_ocst_z" VALUE="3.5527100789104751e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLHE__LeftUpperArm_ocst_x" VALUE="69.413299560546875" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLHE__LeftUpperArm_ocst_y" VALUE="51.573501586914063" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLHE__LeftUpperArm_ocst_z" VALUE="-7.1054298986998436e-15" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMHE__LeftUpperArm_ocst_x" VALUE="51.649898529052734" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMHE__LeftUpperArm_ocst_y" VALUE="75.869796752929688" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LMHE__LeftUpperArm_ocst_z" VALUE="108.14199829101563" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="Torso__RightUpperArm_score_x" VALUE="79.568099975585938" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="Torso__RightUpperArm_score_y" VALUE="113.34400177001953" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="Torso__RightUpperArm_score_z" VALUE="101.56400299072266" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightUpperArm__Torso_score_x" VALUE="-158.28300476074219" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightUpperArm__Torso_score_y" VALUE="-120.08200073242188" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightUpperArm__Torso_score_z" VALUE="-21.466999053955078" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="Torso__LeftUpperArm_score_x" VALUE="-157.30099487304688" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="Torso__LeftUpperArm_score_y" VALUE="54.705600738525391" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="Torso__LeftUpperArm_score_z" VALUE="-113.63500213623047" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftUpperArm__Torso_score_x" VALUE="-161.24800109863281" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftUpperArm__Torso_score_y" VALUE="-105.46900177001953" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftUpperArm__Torso_score_z" VALUE="26.298700332641602" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__PelvisOC_score_x" VALUE="-109.73699951171875" PRIOR="-109.73699951171875" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__PelvisOC_score_y" VALUE="-223.62899780273438" PRIOR="-223.62899780273438" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__PelvisOC_score_z" VALUE="-42.35369873046875" PRIOR="-42.35369873046875" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__PelvisOC_score_x" VALUE="-159.08200073242188" PRIOR="-159.08200073242188" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__PelvisOC_score_y" VALUE="-204.25900268554688" PRIOR="-204.25900268554688" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__PelvisOC_score_z" VALUE="-25.22760009765625" PRIOR="-25.22760009765625" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__RShankOC_score_x" VALUE="141.822998046875" PRIOR="141.822998046875" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__RShankOC_score_y" VALUE="159.42799377441406" PRIOR="159.42799377441406" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__RShankOC_score_z" VALUE="-30.908199310302734" PRIOR="-30.908199310302734" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__RShankOC_sara_x" VALUE="0.44918999075889587" PRIOR="0.44918999075889587" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__RShankOC_sara_y" VALUE="0.054062400013208389" PRIOR="0.054062400013208389" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightThighOC__RShankOC_sara_z" VALUE="0.89179897308349609" PRIOR="0.89179897308349609" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RThighOC_score_x" VALUE="-246.0260009765625" PRIOR="-246.0260009765625" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RThighOC_score_y" VALUE="3.8238599300384521" PRIOR="3.8238599300384521" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RThighOC_score_z" VALUE="-1.2168099880218506" PRIOR="-1.2168099880218506" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RThighOC_sara_x" VALUE="0.11409199982881546" PRIOR="0.11409199982881546" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RThighOC_sara_y" VALUE="-0.85405200719833374" PRIOR="-0.85405200719833374" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RThighOC_sara_z" VALUE="0.50752198696136475" PRIOR="0.50752198696136475" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__LShankOC_score_x" VALUE="86.89520263671875" PRIOR="86.89520263671875" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__LShankOC_score_y" VALUE="135.79299926757813" PRIOR="135.79299926757813" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__LShankOC_score_z" VALUE="-58.117099761962891" PRIOR="-58.117099761962891" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__LShankOC_sara_x" VALUE="0.46394601464271545" PRIOR="0.46394601464271545" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__LShankOC_sara_y" VALUE="-0.6486470103263855" PRIOR="-0.6486470103263855" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftThighOC__LShankOC_sara_z" VALUE="-0.60333400964736938" PRIOR="-0.60333400964736938" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LThighOC_score_x" VALUE="-203.39599609375" PRIOR="-203.39599609375" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LThighOC_score_y" VALUE="-36.325901031494141" PRIOR="-36.325901031494141" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LThighOC_score_z" VALUE="41.701801300048828" PRIOR="41.701801300048828" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LThighOC_sara_x" VALUE="0.21712799370288849" PRIOR="0.21712799370288849" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LThighOC_sara_y" VALUE="-0.25113898515701294" PRIOR="-0.25113898515701294" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LThighOC_sara_z" VALUE="0.94328397512435913" PRIOR="0.94328397512435913" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RFootOC_score_x" VALUE="198.96699523925781" PRIOR="198.96699523925781" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RFootOC_score_y" VALUE="57.600299835205078" PRIOR="57.600299835205078" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightShankOC__RFootOC_score_z" VALUE="-15.822999954223633" PRIOR="-15.822999954223633" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightFootOC__RShankOC_score_x" VALUE="-86.32659912109375" PRIOR="-86.32659912109375" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightFootOC__RShankOC_score_y" VALUE="-27.148500442504883" PRIOR="-27.148500442504883" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RightFootOC__RShankOC_score_z" VALUE="30.624900817871094" PRIOR="30.624900817871094" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LFootOC_score_x" VALUE="241.52299499511719" PRIOR="241.52299499511719" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LFootOC_score_y" VALUE="-16.406299591064453" PRIOR="-16.406299591064453" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftShankOC__LFootOC_score_z" VALUE="-52.396598815917969" PRIOR="-52.396598815917969" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftFootOC__LShankOC_score_x" VALUE="-95.205101013183594" PRIOR="-95.205101013183594" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftFootOC__LShankOC_score_y" VALUE="-6.8538699150085449" PRIOR="-6.8538699150085449" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LeftFootOC__LShankOC_score_z" VALUE="-32.868499755859375" PRIOR="-32.868499755859375" HIDDEN="false" ADVANCED="false" READONLY="false" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLFC__RThighOC_ocst_x" VALUE="151.7449951171875" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLFC__RThighOC_ocst_y" VALUE="78.058403015136719" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="RLFC__RThighOC_ocst_z" VALUE="15.903900146484375" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLFC__LThighOC_ocst_x" VALUE="114.67500305175781" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLFC__LThighOC_ocst_y" VALUE="120.11199951171875" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<StaticParameter NAME="LLFC__LThighOC_ocst_z" VALUE="-12.900099754333496" PRIOR="0" HIDDEN="false" ADVANCED="true" READONLY="true" REQUIRED="false" QUANTITY="length"/>
+		<Parameter NAME="Pelvis_LASI_x" VALUE="105.01156616210938" PRIOR="-31.442531585693359" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LASI_y" VALUE="22.344589233398438" PRIOR="10.425103187561035" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LASI_z" VALUE="118.33037567138672" PRIOR="11.235321044921875" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RASI_x" VALUE="36.159416198730469" PRIOR="-61.318733215332031" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RASI_y" VALUE="-106.11779022216797" PRIOR="2.3714296817779541" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RASI_z" VALUE="-122.35308074951172" PRIOR="-279.95626831054688" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RPSI_x" VALUE="-16.578407287597656" PRIOR="-47.892314910888672" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RPSI_y" VALUE="110.86595916748047" PRIOR="191.64982604980469" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RPSI_z" VALUE="-104.61841583251953" PRIOR="-186.91752624511719" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LPSI_x" VALUE="-5.6291661262512207" PRIOR="-33.942680358886719" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LPSI_y" VALUE="141.98036193847656" PRIOR="195.44902038574219" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LPSI_z" VALUE="-50.769508361816406" PRIOR="-92.601783752441406" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RSAT_x" VALUE="48.967555999755859" PRIOR="39.832977294921875" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RSAT_y" VALUE="144.88870239257813" PRIOR="12.919958114624023" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RSAT_z" VALUE="-107.49763488769531" PRIOR="48.623043060302734" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RLAT_x" VALUE="40.600902557373047" PRIOR="29.030403137207031" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RLAT_y" VALUE="75.218009948730469" PRIOR="-23.270961761474609" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RLAT_z" VALUE="-278.11495971679688" PRIOR="-84.117637634277344" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RIAT_x" VALUE="21.024444580078125" PRIOR="41.929092407226563" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RIAT_y" VALUE="221.03140258789063" PRIOR="72.447410583496094" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RIAT_z" VALUE="-296.21929931640625" PRIOR="-89.112937927246094" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RFIB_x" VALUE="-17.947017669677734" PRIOR="8.955078125" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RFIB_y" VALUE="-8.9763956069946289" PRIOR="-40.600162506103516" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RFIB_z" VALUE="-48.449951171875" PRIOR="27.924465179443359" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RASH_x" VALUE="0.9689178466796875" PRIOR="-4.3743896484375" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RASH_y" VALUE="41.784381866455078" PRIOR="-33.113151550292969" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RASH_z" VALUE="-285.98089599609375" PRIOR="-206.92692565917969" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RLML_x" VALUE="-65.872451782226563" PRIOR="-11.15043830871582" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RLML_y" VALUE="8.7070579528808594" PRIOR="10.04636287689209" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RLML_z" VALUE="-432.44073486328125" PRIOR="-370.78866577148438" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RMML_x" VALUE="-62.563190460205078" PRIOR="-19.678401947021484" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RMML_y" VALUE="108.14554595947266" PRIOR="104.54705810546875" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RMML_z" VALUE="-418.59225463867188" PRIOR="-334.996337890625" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RCAL_x" VALUE="-39.915359497070313" PRIOR="2.7471427917480469" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RCAL_y" VALUE="-60.751792907714844" PRIOR="-10.008918762207031" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RCAL_z" VALUE="19.574867248535156" PRIOR="11.912430763244629" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RMT5_x" VALUE="38.290729522705078" PRIOR="26.268156051635742" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RMT5_y" VALUE="-12.619969367980957" PRIOR="-5.8903665542602539" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RMT5_z" VALUE="-151.70057678222656" PRIOR="-186.07749938964844" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RightFoot3_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RightFoot3_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RightFoot3_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RTOE_x" VALUE="24.902835845947266" PRIOR="35.465290069580078" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RTOE_y" VALUE="98.885147094726563" PRIOR="108.97845458984375" HIDDEN="true"/>
+		<Parameter NAME="RightFoot_RTOE_z" VALUE="-153.79888916015625" PRIOR="-211.90625" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LSAT_x" VALUE="52.676891326904297" PRIOR="-5.823488712310791" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LSAT_y" VALUE="41.062473297119141" PRIOR="-32.326557159423828" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LSAT_z" VALUE="-91.503707885742188" PRIOR="9.3111677169799805" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LIAT_x" VALUE="52.410125732421875" PRIOR="-57.754501342773438" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LIAT_y" VALUE="159.03497314453125" PRIOR="-42.404285430908203" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LIAT_z" VALUE="-30.598691940307617" PRIOR="-127.29802703857422" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LLAT_x" VALUE="39.922256469726563" PRIOR="-20.137617111206055" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LLAT_y" VALUE="162.02885437011719" PRIOR="42.798709869384766" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LLAT_z" VALUE="-163.92266845703125" PRIOR="-111.71609497070313" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LFIB_x" VALUE="100.42618560791016" PRIOR="-26.418712615966797" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LFIB_y" VALUE="47.793075561523438" PRIOR="-41.495265960693359" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LFIB_z" VALUE="-118.01490020751953" PRIOR="11.404794692993164" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LASH_x" VALUE="46.940406799316406" PRIOR="-42.025737762451172" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LASH_y" VALUE="63.646823883056641" PRIOR="-30.125167846679688" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LASH_z" VALUE="-243.87539672851563" PRIOR="-126.85989379882813" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LLML_x" VALUE="12.688674926757813" PRIOR="-16.708650588989258" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LLML_y" VALUE="239.42024230957031" PRIOR="118.55580139160156" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LLML_z" VALUE="-456.62225341796875" PRIOR="-365.37509155273438" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LMML_x" VALUE="-80.930282592773438" PRIOR="-109.85963439941406" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LMML_y" VALUE="223.27288818359375" PRIOR="118.32741546630859" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LMML_z" VALUE="-419.6912841796875" PRIOR="-350.13723754882813" HIDDEN="true"/>
+		<Parameter NAME="Torso_LABK_x" VALUE="201.33982849121094" PRIOR="30.808158874511719" HIDDEN="true"/>
+		<Parameter NAME="Torso_LABK_y" VALUE="14.27384090423584" PRIOR="12.074551582336426" HIDDEN="true"/>
+		<Parameter NAME="Torso_LABK_z" VALUE="-251.86650085449219" PRIOR="-24.369548797607422" HIDDEN="true"/>
+		<Parameter NAME="Torso_RABK_x" VALUE="38.763694763183594" PRIOR="23.463172912597656" HIDDEN="true"/>
+		<Parameter NAME="Torso_RABK_y" VALUE="-3.3680622577667236" PRIOR="2.2356843948364258" HIDDEN="true"/>
+		<Parameter NAME="Torso_RABK_z" VALUE="-220.35691833496094" PRIOR="-190.26582336425781" HIDDEN="true"/>
+		<Parameter NAME="Torso_RACR_x" VALUE="50.718246459960938" PRIOR="16.753934860229492" HIDDEN="true"/>
+		<Parameter NAME="Torso_RACR_y" VALUE="51.645088195800781" PRIOR="164.8497314453125" HIDDEN="true"/>
+		<Parameter NAME="Torso_RACR_z" VALUE="-478.88796997070313" PRIOR="-445.74697875976563" HIDDEN="true"/>
+		<Parameter NAME="Torso_CEV7_x" VALUE="230.0087890625" PRIOR="179.76220703125" HIDDEN="true"/>
+		<Parameter NAME="Torso_CEV7_y" VALUE="52.481319427490234" PRIOR="140.03645324707031" HIDDEN="true"/>
+		<Parameter NAME="Torso_CEV7_z" VALUE="-397.99868774414063" PRIOR="-373.70074462890625" HIDDEN="true"/>
+		<Parameter NAME="Torso_CLAV_x" VALUE="159.81350708007813" PRIOR="102.68961334228516" HIDDEN="true"/>
+		<Parameter NAME="Torso_CLAV_y" VALUE="217.05537414550781" PRIOR="268.848876953125" HIDDEN="true"/>
+		<Parameter NAME="Torso_CLAV_z" VALUE="-370.59555053710938" PRIOR="-282.15188598632813" HIDDEN="true"/>
+		<Parameter NAME="Torso_LACR_x" VALUE="354.20806884765625" PRIOR="287.31350708007813" HIDDEN="true"/>
+		<Parameter NAME="Torso_LACR_y" VALUE="143.9990234375" PRIOR="203.03071594238281" HIDDEN="true"/>
+		<Parameter NAME="Torso_LACR_z" VALUE="-270.81295776367188" PRIOR="-262.54434204101563" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RSAA_x" VALUE="26.848310470581055" PRIOR="1.1652486324310303" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RSAA_y" VALUE="66.684349060058594" PRIOR="0.6048920750617981" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RSAA_z" VALUE="-46.255901336669922" PRIOR="-21.541824340820313" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RLHE_x" VALUE="0.15686911344528198" PRIOR="-1.4729175567626953" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RLHE_y" VALUE="65.468734741210938" PRIOR="21.37921142578125" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RLHE_z" VALUE="-201.61029052734375" PRIOR="-177.76361083984375" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RMHE_x" VALUE="9.4377756118774414" PRIOR="-16.321479797363281" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RMHE_y" VALUE="173.32319641113281" PRIOR="112.59532165527344" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RMHE_z" VALUE="-203.83810424804688" PRIOR="-174.674072265625" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RIAA_x" VALUE="-50.259059906005859" PRIOR="46.608081817626953" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RIAA_y" VALUE="68.169021606445313" PRIOR="15.489011764526367" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RIAA_z" VALUE="-142.70608520507813" PRIOR="-101.98682403564453" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RUHD_x" VALUE="87.163429260253906" PRIOR="24.241144180297852" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RUHD_y" VALUE="13.051621437072754" PRIOR="-6.3554625511169434" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RUHD_z" VALUE="-20.421716690063477" PRIOR="-0.39393562078475952" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RRSP_x" VALUE="-9.7164955139160156" PRIOR="7.5513319969177246" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RRSP_y" VALUE="-26.954841613769531" PRIOR="-14.713296890258789" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RRSP_z" VALUE="-295.96524047851563" PRIOR="-272.11776733398438" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RUSP_x" VALUE="2.6298198699951172" PRIOR="6.9460411071777344" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RUSP_y" VALUE="49.316036224365234" PRIOR="59.196937561035156" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RUSP_z" VALUE="-281.09683227539063" PRIOR="-259.46853637695313" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LSAA_x" VALUE="-20.754751205444336" PRIOR="-9.187830924987793" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LSAA_y" VALUE="15.51080322265625" PRIOR="45.949695587158203" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LSAA_z" VALUE="-73.499534606933594" PRIOR="4.5478329658508301" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LIAA_x" VALUE="-0.19190707802772522" PRIOR="-6.2533469200134277" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LIAA_y" VALUE="114.59336090087891" PRIOR="33.087566375732422" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LIAA_z" VALUE="-93.699569702148438" PRIOR="-125.70426177978516" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LLHE_x" VALUE="-12.253056526184082" PRIOR="-26.974376678466797" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LLHE_y" VALUE="152.89993286132813" PRIOR="173.39591979980469" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LLHE_z" VALUE="-175.31103515625" PRIOR="-143.44454956054688" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LMHE_x" VALUE="-122.53480529785156" PRIOR="-99.68634033203125" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LMHE_y" VALUE="157.01312255859375" PRIOR="126.47467803955078" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LMHE_z" VALUE="-169.25776672363281" PRIOR="-173.91836547851563" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LUHD_x" VALUE="41.502548217773438" PRIOR="-26.559467315673828" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LUHD_y" VALUE="-13.471743583679199" PRIOR="-8.8165092468261719" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LUHD_z" VALUE="8.6687307357788086" PRIOR="4.9811019897460938" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LUSP_x" VALUE="-3.5523030757904053" PRIOR="13.333005905151367" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LUSP_y" VALUE="-3.3303780555725098" PRIOR="-14.94736385345459" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LUSP_z" VALUE="-275.59408569335938" PRIOR="-258.000244140625" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LRSP_x" VALUE="0.35917952656745911" PRIOR="-3.4517552852630615" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LRSP_y" VALUE="77.86260986328125" PRIOR="57.020248413085938" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LRSP_z" VALUE="-270.95553588867188" PRIOR="-247.31234741210938" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LCAL_x" VALUE="-79.499832153320313" PRIOR="21.933895111083984" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LCAL_y" VALUE="19.622030258178711" PRIOR="14.181449890136719" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LCAL_z" VALUE="69.124320983886719" PRIOR="10.952637672424316" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LeftFoot2_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LeftFoot2_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LeftFoot2_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LTOE_x" VALUE="-8.3502140045166016" PRIOR="19.924819946289063" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LTOE_y" VALUE="29.173440933227539" PRIOR="40.453037261962891" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LTOE_z" VALUE="-158.12051391601563" PRIOR="-247.6544189453125" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LMT5_x" VALUE="-46.634479522705078" PRIOR="-16.401756286621094" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LMT5_y" VALUE="115.17202758789063" PRIOR="116.52486419677734" HIDDEN="true"/>
+		<Parameter NAME="LeftFoot_LMT5_z" VALUE="-94.320137023925781" PRIOR="-165.43490600585938" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RightThigh_x" VALUE="101.55075073242188" PRIOR="186.6773681640625" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RightThigh_y" VALUE="-35.952323913574219" PRIOR="-52.01123046875" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_RightThigh_z" VALUE="-113.38789367675781" PRIOR="-305.5546875" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RightShank_x" VALUE="39.684677124023438" PRIOR="-10.795710563659668" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RightShank_y" VALUE="186.98846435546875" PRIOR="165.79267883300781" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RightShank_z" VALUE="-437.01126098632813" PRIOR="-243.80720520019531" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RightFoot_x" VALUE="-86.95611572265625" PRIOR="-78.205482482910156" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RightFoot_y" VALUE="75.491783142089844" PRIOR="60.554389953613281" HIDDEN="true"/>
+		<Parameter NAME="RightShank_RightFoot_z" VALUE="-439.5213623046875" PRIOR="-407.09942626953125" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LeftThigh_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LeftThigh_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_LeftThigh_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LeftShank_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LeftShank_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LeftShank_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LeftFoot_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LeftFoot_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftShank_LeftFoot_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_Torso_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_Torso_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Pelvis_Torso_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_LeftUpperArm_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_LeftUpperArm_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_LeftUpperArm_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LeftForearm_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LeftForearm_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftUpperArm_LeftForearm_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_RightUpperArm_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_RightUpperArm_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_RightUpperArm_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RightForearm_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RightForearm_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightUpperArm_RightForearm_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftHand_LeftHand1_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftHand_LeftHand1_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftHand_LeftHand1_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightHand_RightHand1_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightHand_RightHand1_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightHand_RightHand1_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head1_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head1_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head1_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head2_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head2_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head2_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head3_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head3_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head3_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head4_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head4_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Head_Head4_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_Head_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_Head_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="Torso_Head_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LeftHand_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LeftHand_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="LeftForearm_LeftHand_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RightHand_x" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RightHand_y" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightForearm_RightHand_z" VALUE="0" PRIOR="0" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RightThigh8_x" VALUE="32.738395690917969" PRIOR="33.630950927734375" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RightThigh8_y" VALUE="163.56364440917969" PRIOR="68.865081787109375" HIDDEN="true"/>
+		<Parameter NAME="RightThigh_RightThigh8_z" VALUE="-397.23504638671875" PRIOR="-206.55374145507813" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LeftThigh22_x" VALUE="47.623485565185547" PRIOR="-28.689888000488281" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LeftThigh22_y" VALUE="277.07940673828125" PRIOR="135.55223083496094" HIDDEN="true"/>
+		<Parameter NAME="LeftThigh_LeftThigh22_z" VALUE="-149.70611572265625" PRIOR="-148.42355346679688" HIDDEN="true"/>
+	</Parameters>
+	<Skeleton RGB="93 93 93">
+		<Segment NAME="Pelvis" OPACITY="255" BOUNDS="-30.7408791 -30.7408791 -307.408783 30.7408791 30.7408791 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 164 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+			<JointFree NAME="World_Pelvis" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0" MEAN="0 0 0 0 0 0" COVARIANCE="9.8596000671386719 0 0 0 0 0 0 9.8596000671386719 0 0 0 0 0 0 9.8596000671386719 0 0 0 0 0 0 100000000 0 0 0 0 0 0 100000000 0 0 0 0 0 0 100000000" T="* * * * * *" SIGNS="+ + + + + +" RANGE-CENTRING-STATE="0 0 0 0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 0 0 0 29.60881233215332 0 0 0 0 0 0 29.60881233215332 0 0 0 0 0 0 100000000 0 0 0 0 0 0 100000000 0 0 0 0 0 0 100000000">
+				<JointTemplate MEAN="0 0 0 0 0 0" COVARIANCE="2.464900016784668 0 0 0 0 0 0 2.464900016784668 0 0 0 0 0 0 246.49000549316406 0 0 0 0 0 0 1000000 0 0 0 0 0 0 1000000 0 0 0 0 0 0 1000000" TPOSE-MEAN="2.0850386619567871 -0.56743276119232178 -2.771080493927002 -165.8114013671875 -599.16943359375 1078.3812255859375" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0"/>
+			</JointFree>
+			<Segment NAME="RightThigh" OPACITY="255" BOUNDS="-14.555954 -14.555954 -145.55954 14.555954 14.555954 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="0 255 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+				<JointBall NAME="Pelvis_RightThigh" PRE-ORIENTATION="-2.1826479399999998 -1.2163862000000001 2.9083416500000001" PRE-POSITION="101.55075073242188 -35.952323913574219 -113.38789367675781" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="-0 -0 -0" MEAN="0.78274202346801758 -0.63171720504760742 -0.16594687104225159" COVARIANCE="0.23196710646152496 -0.0097213508561253548 -0.051484759896993637 -0.0097213508561253548 0.056167837232351303 0.033553879708051682 -0.051484759896993637 0.033553879708051682 0.10517206788063049" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+					<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="0.32145848870277405 -0.56342893838882446 0.29574912786483765" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="-2.18264794 -1.2163862 2.90834165" PRE-POSITION="'Pelvis_RightThigh_x' 'Pelvis_RightThigh_y' 'Pelvis_RightThigh_z'" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="-0 -0 -0"/>
+				</JointBall>
+				<Segment NAME="RightShank" OPACITY="255" BOUNDS="-24.405344 -24.405344 -244.053436 24.405344 24.405344 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="0 255 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+					<JointBall NAME="RightThigh_RightShank" PRE-ORIENTATION="1.01588213 -0.162345082 0.68153470800000004" PRE-POSITION="39.684677124023438 186.98846435546875 -437.01126098632813" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 -0" MEAN="-0.58658868074417114 1.0014317035675049 -0.034794136881828308" COVARIANCE="0.049808263778686523 -0.14661253988742828 -0.0036387951113283634 -0.14661253988742828 0.53574377298355103 -0.0020877826027572155 -0.0036387951113283634 -0.0020877826027572155 0.026800885796546936" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+						<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="-0.20746946334838867 0.19231821596622467 0.32060492038726807" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="1.01588213 -0.162345082 0.681534708" PRE-POSITION="'RightThigh_RightShank_x' 'RightThigh_RightShank_y' 'RightThigh_RightShank_z'" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 -0"/>
+					</JointBall>
+					<Segment NAME="RightFoot" OPACITY="255" BOUNDS="-21.0592709 -21.0592709 -210.592697 21.0592709 21.0592709 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="0 255 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+						<JointBall NAME="RightShank_RightFoot" PRE-ORIENTATION="0.17429566399999999 -1.66014302 -0.16137722099999999" PRE-POSITION="-86.95611572265625 75.491783142089844 -439.5213623046875" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="-4.3188443243069602e-23 1.4210856409267898e-14 -1.3668253379030864e-22" MEAN="-0.51990395784378052 0.61396414041519165 -0.10159938782453537" COVARIANCE="0.0086982157081365585 -0.011063084006309509 -0.013478434644639492 -0.011063084006309509 0.044249493628740311 0.024891171604394913 -0.013478434644639492 0.024891171604394913 0.028807226568460464" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+							<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="-0.48128899931907654 0.53298544883728027 -0.076272167265415192" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="0.174295664 -1.66014302 -0.161377221" PRE-POSITION="'RightShank_RightFoot_x' 'RightShank_RightFoot_y' 'RightShank_RightFoot_z'" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="-4.3188443243069602e-23 1.4210856409267898e-14 -1.3668253379030864e-22"/>
+						</JointBall>
+					</Segment>
+				</Segment>
+			</Segment>
+			<Segment NAME="LeftThigh" OPACITY="255" BOUNDS="-15.6852942 -15.6852942 -156.852936 15.6852942 15.6852942 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 0 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+				<JointBall NAME="Pelvis_LeftThigh" PRE-ORIENTATION="-0.272453785 -1.3178125599999999 -1.20789123" PRE-POSITION="266.86505099999999 33.735565200000003 45.352977799999998" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0" MEAN="0.011941591277718544 -0.5538252592086792 0.58715349435806274" COVARIANCE="0.25688287615776062 0.087294846773147583 0.037841584533452988 0.087294846773147583 0.10769608616828918 0.02596302330493927 0.037841584533452988 0.02596302330493927 0.038506805896759033" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+					<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="0.14806368947029114 -0.15221226215362549 0.84697085618972778" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="-0.272453785 -1.31781256 -1.20789123" PRE-POSITION="266.865051 33.7355652 45.3529778" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0"/>
+				</JointBall>
+				<Segment NAME="LeftShank" OPACITY="255" BOUNDS="-14.507143 -14.507143 -145.071426 14.507143 14.507143 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 0 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+					<JointBall NAME="LeftThigh_LeftShank" PRE-ORIENTATION="0.411928982 -0.15387134299999999 0.52185475800000003" PRE-POSITION="-32.901092499999997 211.491928 -180.56059300000001" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 -0" MEAN="0.88175660371780396 -0.15351475775241852 0.042993582785129547" COVARIANCE="0.68465828895568848 0.13581469655036926 -0.1345258504152298 0.13581469655036926 0.036065209656953812 -0.028826123103499413 -0.1345258504152298 -0.028826123103499413 0.044981546700000763" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+						<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="-0.12927694618701935 -0.37707036733627319 0.10240057110786438" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="0.411928982 -0.153871343 0.521854758" PRE-POSITION="-32.9010925 211.491928 -180.560593" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 -0"/>
+					</JointBall>
+					<Segment NAME="LeftFoot" OPACITY="255" BOUNDS="-21.4759045 -21.4759045 -214.759048 21.4759045 21.4759045 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 0 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+						<JointBall NAME="LeftShank_LeftFoot" PRE-ORIENTATION="1.6903084500000001 2.2510783700000001 3.0397050399999999" PRE-POSITION="-61.459781599999999 213.633926 -414.78668199999998" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 -0 0" MEAN="-0.44232290983200073 0.41767317056655884 0.50682318210601807" COVARIANCE="0.076764658093452454 -0.022178791463375092 -0.033787917345762253 -0.022178791463375092 0.028380937874317169 0.014325159601867199 -0.033787917345762253 0.014325159601867199 0.025823978707194328" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+							<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="-0.63794147968292236 0.31150379776954651 0.46610987186431885" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="1.69030845 2.25107837 3.03970504" PRE-POSITION="-61.4597816 213.633926 -414.786682" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 -0 0"/>
+						</JointBall>
+					</Segment>
+				</Segment>
+			</Segment>
+			<Segment NAME="Torso" OPACITY="255" BOUNDS="-17.3754482 -17.3754482 -173.754486 17.3754482 17.3754482 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 164 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+				<JointBall NAME="Pelvis_Torso" PRE-ORIENTATION="1.1892824200000001 -0.244389728 2.2646284099999998" PRE-POSITION="-100.093338 227.61747700000001 -82.635520900000003" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0" MEAN="1.1604310274124146 -0.28992500901222229 -0.068177454173564911" COVARIANCE="0.0303528793156147 0.020620636641979218 -0.033070243895053864 0.020620636641979218 0.10805688798427582 -0.10153782367706299 -0.033070243895053864 -0.10153782367706299 0.13603559136390686" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+					<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="1.1216819286346436 -0.064240932464599609 -0.13951312005519867" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="1.18928242 -0.244389728 2.26462841" PRE-POSITION="-100.093338 227.617477 -82.6355209" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0"/>
+				</JointBall>
+				<Segment NAME="RightUpperArm" OPACITY="255" BOUNDS="-16.6679897 -16.6679897 -166.679886 16.6679897 16.6679897 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="0 255 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+					<JointBall NAME="Torso_RightUpperArm" PRE-ORIENTATION="0.82830226399999995 0.63095647099999996 1.87223279" PRE-POSITION="-66.270538299999998 82.977714500000005 -477.26153599999998" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 -0" MEAN="0.36410784721374512 0.097212880849838257 -0.63800346851348877" COVARIANCE="0.40210968255996704 0.045028448104858398 0.18470536172389984 0.045028448104858398 0.521861732006073 0.21872378885746002 0.18470536172389984 0.21872378885746002 0.29819828271865845" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+						<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="0.10419599711894989 0.89361101388931274 0.006447850726544857" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="0.828302264 0.630956471 1.87223279" PRE-POSITION="-66.2705383 82.9777145 -477.261536" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 -0"/>
+					</JointBall>
+					<Segment NAME="RightForearm" OPACITY="255" BOUNDS="-28.4394836 -28.4394836 -284.394836 28.4394836 28.4394836 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="0 255 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+						<JointBall NAME="RightUpperArm_RightForearm" PRE-ORIENTATION="2.68466783 1.6505277199999999 -2.3768391599999998" PRE-POSITION="-17.406269099999999 60.426822700000002 -226.533051" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0" MEAN="0.32360309362411499 -0.4130730926990509 -0.37813588976860046" COVARIANCE="0.45051264762878418 -0.23024149239063263 -0.13006879389286041 -0.23024149239063263 0.16493415832519531 0.073875591158866882 -0.13006879389286041 0.073875591158866882 0.10119225829839706" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+							<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="-0.47143149375915527 0.38170486688613892 -0.22521220147609711" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="2.68466783 1.65052772 -2.37683916" PRE-POSITION="-17.4062691 60.4268227 -226.533051" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0"/>
+						</JointBall>
+					</Segment>
+				</Segment>
+				<Segment NAME="LeftUpperArm" OPACITY="255" BOUNDS="-13.8703279 -13.8703279 -138.703278 13.8703279 13.8703279 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 0 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+					<JointBall NAME="Torso_LeftUpperArm" PRE-ORIENTATION="1.9251401400000001 1.47228336 -0.69037413599999997" PRE-POSITION="337.43679800000001 191.770737 -199.96099899999999" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 -0 0" MEAN="0.16220919787883759 -0.49277719855308533 1.0090295076370239" COVARIANCE="0.5087851881980896 0.23489432036876678 -0.031827881932258606 0.23489432036876678 0.62889456748962402 -0.02262425608932972 -0.031827881932258606 -0.02262425608932972 0.078363493084907532" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+						<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="0.42417970299720764 -0.95344865322113037 0.405804842710495" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="1.92514014 1.47228336 -0.690374136" PRE-POSITION="337.436798 191.770737 -199.960999" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 -0 0"/>
+					</JointBall>
+					<Segment NAME="LeftForearm" OPACITY="255" BOUNDS="-28.1233768 -28.1233768 -281.233765 28.1233768 28.1233768 0" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 0 0" HIDDEN="false" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+						<JointBall NAME="LeftUpperArm_LeftForearm" PRE-ORIENTATION="-0.81963139799999996 -0.51624810700000001 -0.163312912" PRE-POSITION="-51.864700300000003 185.792328 -182.19058200000001" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0" MEAN="0.92191344499588013 -0.93515866994857788 3.1383264064788818" COVARIANCE="0.51300543546676636 0.061678491532802582 -0.08041016012430191 0.061678491532802582 0.099582910537719727 0.01718546636402607 -0.08041016012430191 0.01718546636402607 0.22394692897796631" T="* * *" SIGNS="+ + +" RANGE-CENTRING-STATE="0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 29.60881233215332 0 0 0 29.60881233215332">
+							<JointTemplate MEAN="0 0 0" COVARIANCE="1.0466666221618652 0 0 0 1.0466666221618652 0 0 0 1.0466666221618652" TPOSE-MEAN="-0.6851164698600769 -0.21336853504180908 -2.1382062435150146" TPOSE-COVARIANCE="0 0 0 0 0 0 0 0 0" PRE-ORIENTATION="-0.819631398 -0.516248107 -0.163312912" PRE-POSITION="-51.8647003 185.792328 -182.190582" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0"/>
+						</JointBall>
+					</Segment>
+				</Segment>
+			</Segment>
+		</Segment>
+	</Skeleton>
+	<MarkerSet>
+		<Markers>
+			<Marker NAME="RASI" RADIUS="12.5" RGB="255 164 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RPSI" RADIUS="12.5" RGB="255 164 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LPSI" RADIUS="12.5" RGB="255 164 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LASI" RADIUS="12.5" RGB="255 164 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RSAT" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RLAT" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RIAT" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RFIB" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RASH" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RLML" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RMML" RADIUS="12.5" RGB="0 255 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="RCAL" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RMT5" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RTOE" RADIUS="12.5" RGB="0 255 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LFIB" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LMML" RADIUS="12.5" RGB="255 0 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LASH" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LLML" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LSAT" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LIAT" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LLAT" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LCAL" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LMT5" RADIUS="12.5" RGB="255 0 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LTOE" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LABK" RADIUS="12.5" RGB="0 255 255" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RABK" RADIUS="12.5" RGB="0 255 255" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="CLAV" RADIUS="12.5" RGB="0 255 255" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="CEV7" RADIUS="12.5" RGB="0 255 255" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="RACR" RADIUS="12.5" RGB="0 255 255" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LACR" RADIUS="12.5" RGB="0 255 255" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LSAA" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LIAA" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LLHE" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LMHE" RADIUS="12.5" RGB="255 0 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LUHD" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LRSP" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="LUSP" RADIUS="12.5" RGB="255 0 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RSAA" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RIAA" RADIUS="12.5" RGB="0 255 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="RLHE" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RMHE" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RUHD" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RRSP" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RUSP" RADIUS="12.5" RGB="0 255 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="RLFC" RADIUS="12.5" RGB="0 255 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="LLFC" RADIUS="12.5" RGB="255 0 0" STATUS="optional" VIEW-ANGLE="0"/>
+		</Markers>
+		<Sticks>
+			<Stick MARKER1="RASI" MARKER2="RPSI" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="RASI" MARKER2="LPSI" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="RASI" MARKER2="LASI" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="RPSI" MARKER2="LPSI" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="RPSI" MARKER2="LASI" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="LPSI" MARKER2="LASI" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="RSAT" MARKER2="RLAT" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RSAT" MARKER2="RIAT" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RSAT" MARKER2="RLFC" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RLAT" MARKER2="RIAT" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RLAT" MARKER2="RLFC" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RIAT" MARKER2="RLFC" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RFIB" MARKER2="RASH" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RFIB" MARKER2="RLML" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RFIB" MARKER2="RMML" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RASH" MARKER2="RLML" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RASH" MARKER2="RMML" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RLML" MARKER2="RMML" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RCAL" MARKER2="RMT5" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RCAL" MARKER2="RTOE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RMT5" MARKER2="RTOE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="LFIB" MARKER2="LMML" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LFIB" MARKER2="LASH" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LFIB" MARKER2="LLML" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LMML" MARKER2="LASH" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LMML" MARKER2="LLML" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LASH" MARKER2="LLML" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LSAT" MARKER2="LIAT" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LSAT" MARKER2="LLAT" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LSAT" MARKER2="LLFC" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LIAT" MARKER2="LLAT" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LIAT" MARKER2="LLFC" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LLAT" MARKER2="LLFC" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LCAL" MARKER2="LMT5" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LCAL" MARKER2="LTOE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LMT5" MARKER2="LTOE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LABK" MARKER2="RABK" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="LABK" MARKER2="CLAV" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="LABK" MARKER2="CEV7" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="LABK" MARKER2="RACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="LABK" MARKER2="LACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="RABK" MARKER2="CLAV" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="RABK" MARKER2="CEV7" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="RABK" MARKER2="RACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="RABK" MARKER2="LACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="CLAV" MARKER2="CEV7" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="CLAV" MARKER2="RACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="CLAV" MARKER2="LACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="CEV7" MARKER2="RACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="CEV7" MARKER2="LACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="RACR" MARKER2="LACR" RGB1="0 255 255" RGB2="0 255 255"/>
+			<Stick MARKER1="LSAA" MARKER2="LIAA" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LSAA" MARKER2="LLHE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LSAA" MARKER2="LMHE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LIAA" MARKER2="LLHE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LIAA" MARKER2="LMHE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LLHE" MARKER2="LMHE" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LUHD" MARKER2="LRSP" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LUHD" MARKER2="LUSP" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="LRSP" MARKER2="LUSP" RGB1="255 0 0" RGB2="255 0 0"/>
+			<Stick MARKER1="RSAA" MARKER2="RIAA" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RSAA" MARKER2="RLHE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RSAA" MARKER2="RMHE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RIAA" MARKER2="RLHE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RIAA" MARKER2="RMHE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RLHE" MARKER2="RMHE" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RUHD" MARKER2="RRSP" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RUHD" MARKER2="RUSP" RGB1="0 255 0" RGB2="0 255 0"/>
+			<Stick MARKER1="RRSP" MARKER2="RUSP" RGB1="0 255 0" RGB2="0 255 0"/>
+		</Sticks>
+	</MarkerSet>
+	<TargetSet>
+		<Targets>
+			<TargetLocalPointToWorldPoint COVARIANCE="175.30194091796875 247.75059509277344 -44.825355529785156 247.75059509277344 611.9898681640625 -111.58924865722656 -44.825355529785156 -111.58924865722656 111.79003143310547" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LASI" OPACITY="255" POSITION="'Pelvis_LASI_x' 'Pelvis_LASI_y' 'Pelvis_LASI_z'" RGB="93 93 93" SEGMENT="Pelvis" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1560.9149169921875 1110.7618408203125 -97.491371154785156 1110.7618408203125 1102.802978515625 44.939495086669922 -97.491371154785156 44.939495086669922 133.33671569824219"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="135.02546691894531 -79.605766296386719 -5.5561375617980957 -79.605766296386719 150.84439086914063 -15.585383415222168 -5.5561375617980957 -15.585383415222168 103.98930358886719" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RASI" OPACITY="255" POSITION="'Pelvis_RASI_x' 'Pelvis_RASI_y' 'Pelvis_RASI_z'" RGB="93 93 93" SEGMENT="Pelvis" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1423.6373291015625 475.643310546875 -60.592983245849609 475.643310546875 460.06747436523438 -293.028076171875 -60.592983245849609 -293.028076171875 758.31732177734375"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="74.424995422363281 -2.9767055511474609 -45.867908477783203 -2.9767055511474609 148.89437866210938 94.219642639160156 -45.867908477783203 94.219642639160156 210.24969482421875" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RPSI" OPACITY="255" POSITION="'Pelvis_RPSI_x' 'Pelvis_RPSI_y' 'Pelvis_RPSI_z'" RGB="93 93 93" SEGMENT="Pelvis" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="393.825927734375 57.443138122558594 71.638755798339844 57.443138122558594 256.5921630859375 106.40005493164063 71.638755798339844 106.40005493164063 193.04658508300781"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="102.51155090332031 41.083637237548828 -14.4537353515625 41.083637237548828 110.04000091552734 17.844820022583008 -14.4537353515625 17.844820022583008 349.71844482421875" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LPSI" OPACITY="255" POSITION="'Pelvis_LPSI_x' 'Pelvis_LPSI_y' 'Pelvis_LPSI_z'" RGB="93 93 93" SEGMENT="Pelvis" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="254.79942321777344 -41.603233337402344 34.809711456298828 -41.603233337402344 211.88801574707031 -98.526809692382813 34.809711456298828 -98.526809692382813 250.88099670410156"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="25.509756088256836 18.678667068481445 9.8613433837890625 18.678667068481445 59.510654449462891 -5.3281636238098145 9.8613433837890625 -5.3281636238098145 37.278297424316406" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RSAT" OPACITY="255" POSITION="'RightThigh_RSAT_x' 'RightThigh_RSAT_y' 'RightThigh_RSAT_z'" RGB="93 93 93" SEGMENT="RightThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="2569.072021484375 837.89532470703125 -346.38137817382813 837.89532470703125 383.64224243164063 -151.76878356933594 -346.38137817382813 -151.76878356933594 157.64022827148438"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="15.368650436401367 -1.5643413066864014 -6.757819652557373 -1.5643413066864014 10.416496276855469 -0.16704022884368896 -6.757819652557373 -0.16704022884368896 15.788139343261719" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RLAT" OPACITY="255" POSITION="'RightThigh_RLAT_x' 'RightThigh_RLAT_y' 'RightThigh_RLAT_z'" RGB="93 93 93" SEGMENT="RightThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="547.54937744140625 101.64015197753906 -138.6671142578125 101.64015197753906 75.043228149414063 30.638408660888672 -138.6671142578125 30.638408660888672 207.16740417480469"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="14.77238941192627 9.3555917739868164 -1.9118392467498779 9.3555917739868164 38.121437072753906 -15.332831382751465 -1.9118392467498779 -15.332831382751465 19.300189971923828" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RIAT" OPACITY="255" POSITION="'RightThigh_RIAT_x' 'RightThigh_RIAT_y' 'RightThigh_RIAT_z'" RGB="93 93 93" SEGMENT="RightThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1636.56884765625 360.6820068359375 -110.70475006103516 360.6820068359375 94.056037902832031 -45.873802185058594 -110.70475006103516 -45.873802185058594 144.35772705078125"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="10.433135986328125 4.2476911544799805 -4.6704702377319336 4.2476911544799805 16.83941650390625 -1.8509329557418823 -4.6704702377319336 -1.8509329557418823 54.658977508544922" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RFIB" OPACITY="255" POSITION="'RightShank_RFIB_x' 'RightShank_RFIB_y' 'RightShank_RFIB_z'" RGB="93 93 93" SEGMENT="RightShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="302.75027465820313 196.00839233398438 138.37541198730469 196.00839233398438 224.23397827148438 270.98187255859375 138.37541198730469 270.98187255859375 413.58993530273438"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="5.1396842002868652 -0.94092833995819092 -0.51139664649963379 -0.94092833995819092 2.8063147068023682 2.2083723545074463 -0.51139664649963379 2.2083723545074463 8.8264656066894531" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RASH" OPACITY="255" POSITION="'RightShank_RASH_x' 'RightShank_RASH_y' 'RightShank_RASH_z'" RGB="93 93 93" SEGMENT="RightShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="22.948759078979492 10.913789749145508 47.515571594238281 10.913789749145508 9.7485437393188477 20.360038757324219 47.515571594238281 20.360038757324219 305.06597900390625"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="1.4893088340759277 -0.16738782823085785 0.39119485020637512 -0.16738782823085785 1.468059778213501 -2.2932417392730713 0.39119485020637512 -2.2932417392730713 8.5719709396362305" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RLML" OPACITY="255" POSITION="'RightShank_RLML_x' 'RightShank_RLML_y' 'RightShank_RLML_z'" RGB="93 93 93" SEGMENT="RightShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="48.491207122802734 -5.9017066955566406 95.244926452636719 -5.9017066955566406 6.1673731803894043 -28.006189346313477 95.244926452636719 -28.006189346313477 258.32919311523438"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="4.8488168716430664 -0.62228494882583618 2.5733985900878906 -0.62228494882583618 1.4834600687026978 -1.2646481990814209 2.5733985900878906 -1.2646481990814209 7.1654777526855469" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RMML" OPACITY="255" POSITION="'RightShank_RMML_x' 'RightShank_RMML_y' 'RightShank_RMML_z'" RGB="93 93 93" SEGMENT="RightShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="474.88259887695313 129.49542236328125 52.988788604736328 129.49542236328125 38.119132995605469 6.0427131652832031 52.988788604736328 6.0427131652832031 160.0311279296875"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="8.7771196365356445 -0.08316049724817276 3.9208500385284424 -0.08316049724817276 1.9652186632156372 -0.82551378011703491 3.9208500385284424 -0.82551378011703491 3.3486113548278809" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RCAL" OPACITY="255" POSITION="'RightFoot_RCAL_x' 'RightFoot_RCAL_y' 'RightFoot_RCAL_z'" RGB="93 93 93" SEGMENT="RightFoot" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="422.95278930664063 205.35826110839844 124.29322814941406 205.35826110839844 126.13397979736328 67.3304443359375 124.29322814941406 67.3304443359375 40.684059143066406"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="1.0022895336151123 -0.98651242256164551 0.205209881067276 -0.98651242256164551 6.693875789642334 1.3429505825042725 0.205209881067276 1.3429505825042725 1.781403660774231" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RMT5" OPACITY="255" POSITION="'RightFoot_RMT5_x' 'RightFoot_RMT5_y' 'RightFoot_RMT5_z'" RGB="93 93 93" SEGMENT="RightFoot" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="6.2022767066955566 -2.7287449836730957 -19.551702499389648 -2.7287449836730957 3.019218921661377 9.2565708160400391 -19.551702499389648 9.2565708160400391 63.759208679199219"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="2.13547682762146 1.1958774328231812 -0.64356935024261475 1.1958774328231812 14.869132041931152 -12.120937347412109 -0.64356935024261475 -12.120937347412109 18.165706634521484" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RTOE" OPACITY="255" POSITION="'RightFoot_RTOE_x' 'RightFoot_RTOE_y' 'RightFoot_RTOE_z'" RGB="93 93 93" SEGMENT="RightFoot" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="3.3624897003173828 -0.43007355928421021 1.9882413148880005 -0.43007355928421021 3.577009916305542 -4.4798569679260254 1.9882413148880005 -4.4798569679260254 8.6895275115966797"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="101.60786437988281 3.2640483379364014 -95.483009338378906 3.2640483379364014 16.952400207519531 -24.698696136474609 -95.483009338378906 -24.698696136474609 370.93338012695313" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LSAT" OPACITY="255" POSITION="'LeftThigh_LSAT_x' 'LeftThigh_LSAT_y' 'LeftThigh_LSAT_z'" RGB="93 93 93" SEGMENT="LeftThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="3458.977294921875 639.75299072265625 -1907.0286865234375 639.75299072265625 328.05996704101563 -68.8092041015625 -1907.0286865234375 -68.8092041015625 1794.470703125"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="103.92489624023438 -14.142569541931152 25.532991409301758 -14.142569541931152 145.08079528808594 -12.050284385681152 25.532991409301758 -12.050284385681152 17.343528747558594" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LIAT" OPACITY="255" POSITION="'LeftThigh_LIAT_x' 'LeftThigh_LIAT_y' 'LeftThigh_LIAT_z'" RGB="93 93 93" SEGMENT="LeftThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="107.00434875488281 -16.419160842895508 126.34129333496094 -16.419160842895508 265.81979370117188 272.37457275390625 126.34129333496094 272.37457275390625 822.1583251953125"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="74.092262268066406 -30.592761993408203 6.987335205078125 -30.592761993408203 42.451839447021484 -18.467563629150391 6.987335205078125 -18.467563629150391 17.933328628540039" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LLAT" OPACITY="255" POSITION="'LeftThigh_LLAT_x' 'LeftThigh_LLAT_y' 'LeftThigh_LLAT_z'" RGB="93 93 93" SEGMENT="LeftThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="80.219970703125 68.553825378417969 -53.578643798828125 68.553825378417969 98.218215942382813 -78.843040466308594 -53.578643798828125 -78.843040466308594 923.3157958984375"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="41.824459075927734 -66.954994201660156 -10.709733963012695 -66.954994201660156 149.50912475585938 20.531095504760742 -10.709733963012695 20.531095504760742 26.072294235229492" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LFIB" OPACITY="255" POSITION="'LeftShank_LFIB_x' 'LeftShank_LFIB_y' 'LeftShank_LFIB_z'" RGB="93 93 93" SEGMENT="LeftShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="400.39923095703125 -183.80204772949219 -161.9456787109375 -183.80204772949219 101.59649658203125 35.394599914550781 -161.9456787109375 35.394599914550781 244.14825439453125"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="110.53821563720703 -80.566207885742188 -17.575654983520508 -80.566207885742188 63.380130767822266 9.3646078109741211 -17.575654983520508 9.3646078109741211 17.684894561767578" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LASH" OPACITY="255" POSITION="'LeftShank_LASH_x' 'LeftShank_LASH_y' 'LeftShank_LASH_z'" RGB="93 93 93" SEGMENT="LeftShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="4.7168335914611816 -5.1522283554077148 6.2064142227172852 -5.1522283554077148 47.910297393798828 7.4937200546264648 6.2064142227172852 7.4937200546264648 99.067405700683594"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="9.7806453704833984 -5.9475646018981934 0.69009542465209961 -5.9475646018981934 31.528413772583008 43.099143981933594 0.69009542465209961 43.099143981933594 193.9697265625" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LLML" OPACITY="255" POSITION="'LeftShank_LLML_x' 'LeftShank_LLML_y' 'LeftShank_LLML_z'" RGB="93 93 93" SEGMENT="LeftShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="66.19512939453125 -107.94033050537109 25.324180603027344 -107.94033050537109 399.6319580078125 146.28312683105469 25.324180603027344 146.28312683105469 207.51918029785156"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="12.705227851867676 -39.406097412109375 29.814081192016602 -39.406097412109375 145.70648193359375 -99.406715393066406 29.814081192016602 -99.406715393066406 80.569595336914063" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LMML" OPACITY="255" POSITION="'LeftShank_LMML_x' 'LeftShank_LMML_y' 'LeftShank_LMML_z'" RGB="93 93 93" SEGMENT="LeftShank" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="13.027091026306152 -37.779117584228516 14.238665580749512 -37.779117584228516 147.31187438964844 -57.338260650634766 14.238665580749512 -57.338260650634766 89.498893737792969"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="80.956680297851563 -62.581218719482422 -94.95782470703125 -62.581218719482422 190.28466796875 217.98333740234375 -94.95782470703125 217.98333740234375 344.43283081054688" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LABK" OPACITY="255" POSITION="'Torso_LABK_x' 'Torso_LABK_y' 'Torso_LABK_z'" RGB="93 93 93" SEGMENT="Torso" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="165.17878723144531 19.384279251098633 -26.309553146362305 19.384279251098633 563.39208984375 -56.641143798828125 -26.309553146362305 -56.641143798828125 187.76446533203125"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="163.71551513671875 -124.78816986083984 -88.478202819824219 -124.78816986083984 212.03706359863281 93.027168273925781 -88.478202819824219 93.027168273925781 195.25265502929688" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RABK" OPACITY="255" POSITION="'Torso_RABK_x' 'Torso_RABK_y' 'Torso_RABK_z'" RGB="93 93 93" SEGMENT="Torso" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="403.99472045898438 -239.48936462402344 -146.3226318359375 -239.48936462402344 348.29193115234375 112.24820709228516 -146.3226318359375 112.24820709228516 232.17951965332031"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="185.13093566894531 -6.1346359252929688 85.666328430175781 -6.1346359252929688 138.31094360351563 -91.837203979492188 85.666328430175781 -91.837203979492188 203.03706359863281" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RACR" OPACITY="255" POSITION="'Torso_RACR_x' 'Torso_RACR_y' 'Torso_RACR_z'" RGB="93 93 93" SEGMENT="Torso" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="268.40725708007813 -155.04423522949219 -91.763092041015625 -155.04423522949219 465.84109497070313 193.24642944335938 -91.763092041015625 193.24642944335938 265.02581787109375"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="121.70515441894531 39.123668670654297 -71.562614440917969 39.123668670654297 228.85319519042969 -58.638233184814453 -71.562614440917969 -58.638233184814453 236.98124694824219" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="CEV7" OPACITY="255" POSITION="'Torso_CEV7_x' 'Torso_CEV7_y' 'Torso_CEV7_z'" RGB="93 93 93" SEGMENT="Torso" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="687.07232666015625 -330.84664916992188 -303.73135375976563 -330.84664916992188 329.3104248046875 108.33558654785156 -303.73135375976563 108.33558654785156 268.04306030273438"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="256.30752563476563 -128.44313049316406 -78.946815490722656 -128.44313049316406 259.983642578125 108.60371398925781 -78.946815490722656 108.60371398925781 111.38875579833984" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="CLAV" OPACITY="255" POSITION="'Torso_CLAV_x' 'Torso_CLAV_y' 'Torso_CLAV_z'" RGB="93 93 93" SEGMENT="Torso" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="438.67337036132813 -103.84209442138672 -254.08815002441406 -103.84209442138672 403.22756958007813 268.84909057617188 -254.08815002441406 268.84909057617188 737.49224853515625"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="390.4609375 192.63877868652344 170.39564514160156 192.63877868652344 177.29493713378906 113.13278198242188 170.39564514160156 113.13278198242188 174.50762939453125" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LACR" OPACITY="255" POSITION="'Torso_LACR_x' 'Torso_LACR_y' 'Torso_LACR_z'" RGB="93 93 93" SEGMENT="Torso" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="260.53643798828125 -129.42341613769531 -20.172704696655273 -129.42341613769531 261.47775268554688 79.223701477050781 -20.172704696655273 79.223701477050781 197.61935424804688"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="717.5980224609375 340.32870483398438 -244.39085388183594 340.32870483398438 1496.9400634765625 99.460884094238281 -244.39085388183594 99.460884094238281 198.03739929199219" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RSAA" OPACITY="255" POSITION="'RightUpperArm_RSAA_x' 'RightUpperArm_RSAA_y' 'RightUpperArm_RSAA_z'" RGB="93 93 93" SEGMENT="RightUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="514.47027587890625 175.5220947265625 94.216773986816406 175.5220947265625 624.6851806640625 205.92985534667969 94.216773986816406 205.92985534667969 326.77761840820313"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="20.756248474121094 9.837153434753418 8.9053153991699219 9.837153434753418 43.366958618164063 -47.592475891113281 8.9053153991699219 -47.592475891113281 91.188270568847656" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RLHE" OPACITY="255" POSITION="'RightUpperArm_RLHE_x' 'RightUpperArm_RLHE_y' 'RightUpperArm_RLHE_z'" RGB="93 93 93" SEGMENT="RightUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="56.335155487060547 17.028480529785156 -6.5995879173278809 17.028480529785156 79.566360473632813 -131.61434936523438 -6.5995879173278809 -131.61434936523438 319.67919921875"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="151.43551635742188 6.4201545715332031 -165.55711364746094 6.4201545715332031 87.850921630859375 -255.7999267578125 -165.55711364746094 -255.7999267578125 930.55230712890625" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RMHE" OPACITY="255" POSITION="'RightUpperArm_RMHE_x' 'RightUpperArm_RMHE_y' 'RightUpperArm_RMHE_z'" RGB="93 93 93" SEGMENT="RightUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="107.91916656494141 50.3082275390625 -80.398765563964844 50.3082275390625 52.373817443847656 -97.487571716308594 -80.398765563964844 -97.487571716308594 517.19573974609375"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="128.04423522949219 -84.624740600585938 38.344009399414063 -84.624740600585938 287.15798950195313 -43.144752502441406 38.344009399414063 -43.144752502441406 79.856735229492188" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RIAA" OPACITY="255" POSITION="'RightUpperArm_RIAA_x' 'RightUpperArm_RIAA_y' 'RightUpperArm_RIAA_z'" RGB="93 93 93" SEGMENT="RightUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="180.21124267578125 29.971714019775391 -74.790397644042969 29.971714019775391 128.98658752441406 -128.62893676757813 -74.790397644042969 -128.62893676757813 463.15615844726563"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="36.100505828857422 10.301922798156738 5.5689244270324707 10.301922798156738 29.180557250976563 10.96202278137207 5.5689244270324707 10.96202278137207 50.725246429443359" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RUHD" OPACITY="255" POSITION="'RightForearm_RUHD_x' 'RightForearm_RUHD_y' 'RightForearm_RUHD_z'" RGB="93 93 93" SEGMENT="RightForearm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="84.218887329101563 -1.4288413524627686 -38.218944549560547 -1.4288413524627686 95.24920654296875 -34.783309936523438 -38.218944549560547 -34.783309936523438 123.29487609863281"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="40.462368011474609 -7.3947033882141113 -19.184455871582031 -7.3947033882141113 4.8747262954711914 1.5557602643966675 -19.184455871582031 1.5557602643966675 22.694341659545898" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RRSP" OPACITY="255" POSITION="'RightForearm_RRSP_x' 'RightForearm_RRSP_y' 'RightForearm_RRSP_z'" RGB="93 93 93" SEGMENT="RightForearm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="16.147462844848633 -1.6159570217132568 3.6219565868377686 -1.6159570217132568 4.8771638870239258 -13.814619064331055 3.6219565868377686 -13.814619064331055 234.50700378417969"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="47.411262512207031 -14.643961906433105 0.38658219575881958 -14.643961906433105 6.5611119270324707 -2.2155170440673828 0.38658219575881958 -2.2155170440673828 22.845428466796875" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RUSP" OPACITY="255" POSITION="'RightForearm_RUSP_x' 'RightForearm_RUSP_y' 'RightForearm_RUSP_z'" RGB="93 93 93" SEGMENT="RightForearm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="16.087686538696289 2.2982883453369141 -39.640716552734375 2.2982883453369141 5.1708803176879883 -15.74623966217041 -39.640716552734375 -15.74623966217041 433.4107666015625"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="208.20712280273438 -63.344131469726563 -13.284943580627441 -63.344131469726563 87.372039794921875 58.591445922851563 -13.284943580627441 58.591445922851563 303.22885131835938" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LSAA" OPACITY="255" POSITION="'LeftUpperArm_LSAA_x' 'LeftUpperArm_LSAA_y' 'LeftUpperArm_LSAA_z'" RGB="93 93 93" SEGMENT="LeftUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="289.68051147460938 -87.459617614746094 -51.431842803955078 -87.459617614746094 876.0482177734375 218.0927734375 -51.431842803955078 218.0927734375 219.46151733398438"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="102.8111572265625 -10.421424865722656 -6.6743712425231934 -10.421424865722656 52.459903717041016 -11.816337585449219 -6.6743712425231934 -11.816337585449219 86.546760559082031" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LIAA" OPACITY="255" POSITION="'LeftUpperArm_LIAA_x' 'LeftUpperArm_LIAA_y' 'LeftUpperArm_LIAA_z'" RGB="93 93 93" SEGMENT="LeftUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="89.751243591308594 -12.53764533996582 60.805435180664063 -12.53764533996582 224.56159973144531 -133.36155700683594 60.805435180664063 -133.36155700683594 396.05490112304688"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="7.7503137588500977 -4.441408634185791 11.070188522338867 -4.441408634185791 80.85870361328125 -69.218299865722656 11.070188522338867 -69.218299865722656 86.740097045898438" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LLHE" OPACITY="255" POSITION="'LeftUpperArm_LLHE_x' 'LeftUpperArm_LLHE_y' 'LeftUpperArm_LLHE_z'" RGB="93 93 93" SEGMENT="LeftUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="32.749183654785156 -61.077732086181641 39.431716918945313 -61.077732086181641 151.958984375 -132.17208862304688 39.431716918945313 -132.17208862304688 175.45329284667969"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="78.182121276855469 63.862377166748047 55.305137634277344 63.862377166748047 192.39413452148438 -80.566726684570313 55.305137634277344 -80.566726684570313 194.770751953125" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LMHE" OPACITY="255" POSITION="'LeftUpperArm_LMHE_x' 'LeftUpperArm_LMHE_y' 'LeftUpperArm_LMHE_z'" RGB="93 93 93" SEGMENT="LeftUpperArm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="40.138683319091797 -82.935462951660156 74.117546081542969 -82.935462951660156 235.52940368652344 -246.11251831054688 74.117546081542969 -246.11251831054688 290.935791015625"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="177.334716796875 -9.0688762664794922 -24.277370452880859 -9.0688762664794922 44.623260498046875 21.02979850769043 -24.277370452880859 21.02979850769043 40.699169158935547" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LUHD" OPACITY="255" POSITION="'LeftForearm_LUHD_x' 'LeftForearm_LUHD_y' 'LeftForearm_LUHD_z'" RGB="93 93 93" SEGMENT="LeftForearm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="179.5599365234375 -1.5458028316497803 112.61260986328125 -1.5458028316497803 54.347145080566406 10.956523895263672 112.61260986328125 10.956523895263672 182.28427124023438"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="17.332170486450195 0.7329176664352417 -6.3195757865905762 0.7329176664352417 0.68795484304428101 -1.0046721696853638 -6.3195757865905762 -1.0046721696853638 37.743640899658203" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LUSP" OPACITY="255" POSITION="'LeftForearm_LUSP_x' 'LeftForearm_LUSP_y' 'LeftForearm_LUSP_z'" RGB="93 93 93" SEGMENT="LeftForearm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="10.917948722839355 0.040330484509468079 4.0759134292602539 0.040330484509468079 3.4138388633728027 -9.044987678527832 4.0759134292602539 -9.044987678527832 177.07785034179688"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="15.464425086975098 0.70057165622711182 3.2173652648925781 0.70057165622711182 1.2904859781265259 -3.8830809593200684 3.2173652648925781 -3.8830809593200684 25.469600677490234" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LRSP" OPACITY="255" POSITION="'LeftForearm_LRSP_x' 'LeftForearm_LRSP_y' 'LeftForearm_LRSP_z'" RGB="93 93 93" SEGMENT="LeftForearm" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="14.151693344116211 0.84313315153121948 19.480016708374023 0.84313315153121948 6.3222756385803223 -11.077783584594727 19.480016708374023 -11.077783584594727 192.362548828125"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="131.30482482910156 -27.468984603881836 16.890644073486328 -27.468984603881836 9.9214572906494141 -3.5145149230957031 16.890644073486328 -3.5145149230957031 10.881335258483887" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LCAL" OPACITY="255" POSITION="'LeftFoot_LCAL_x' 'LeftFoot_LCAL_y' 'LeftFoot_LCAL_z'" RGB="93 93 93" SEGMENT="LeftFoot" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="108.27589416503906 94.065460205078125 30.170421600341797 94.065460205078125 159.22172546386719 55.760738372802734 30.170421600341797 55.760738372802734 23.284572601318359"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="31.564647674560547 1.3020308017730713 6.7240324020385742 1.3020308017730713 8.8495817184448242 1.8089455366134644 6.7240324020385742 1.8089455366134644 21.490692138671875" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LTOE" OPACITY="255" POSITION="'LeftFoot_LTOE_x' 'LeftFoot_LTOE_y' 'LeftFoot_LTOE_z'" RGB="93 93 93" SEGMENT="LeftFoot" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1.7747584581375122 1.8270652294158936 -2.5125529766082764 1.8270652294158936 5.2142963409423828 -6.5306529998779297 -2.5125529766082764 -6.5306529998779297 21.167882919311523"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="5.7264389991760254 2.0752336978912354 3.6284642219543457 2.0752336978912354 20.069080352783203 3.6637918949127197 3.6284642219543457 3.6637918949127197 7.7415003776550293" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LMT5" OPACITY="255" POSITION="'LeftFoot_LMT5_x' 'LeftFoot_LMT5_y' 'LeftFoot_LMT5_z'" RGB="93 93 93" SEGMENT="LeftFoot" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1.6456989049911499 1.4926352500915527 -0.27852344512939453 1.4926352500915527 8.3705129623413086 -2.059577465057373 -0.27852344512939453 -2.059577465057373 8.9499340057373047"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="15.073980331420898 1.1949760913848877 14.899735450744629 1.1949760913848877 7.675504207611084 -17.595638275146484 14.899735450744629 -17.595638275146484 98.007728576660156" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="RLFC" OPACITY="255" POSITION="'RightThigh_RightThigh8_x' 'RightThigh_RightThigh8_y' 'RightThigh_RightThigh8_z'" RGB="93 93 93" SEGMENT="RightThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1 0 0 0 1 0 0 0 1"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="100.50668334960938 40.248329162597656 -208.50375366210938 40.248329162597656 45.652008056640625 -90.489791870117188 -208.50375366210938 -90.489791870117188 453.71566772460938" FILL-GAPS="false" GAUSSIAN="true" HIDDEN="false" MARKER="LLFC" OPACITY="255" POSITION="'LeftThigh_LeftThigh22_x' 'LeftThigh_LeftThigh22_y' 'LeftThigh_LeftThigh22_z'" RGB="93 93 93" SEGMENT="LeftThigh" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1 0 0 0 1 0 0 0 1"/>
+			</TargetLocalPointToWorldPoint>
+		</Targets>
+	</TargetSet>
+</KinematicModel>
+
