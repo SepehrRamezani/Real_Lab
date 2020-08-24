@@ -1,7 +1,7 @@
 % Add btk library to MATLAB path  -> https://code.google.com/archive/p/b-tk/downloads
 clear all
 folder =[fileparts(mfilename('fullpath')) '\TestData\'];
-fname = 'Functional_Normal.c3d';
+fname = 'Functional_Fast.c3d';
 q=1;
 %% C3D file reading 
 data = c3d_getdata([folder fname]);
@@ -35,9 +35,12 @@ for i = 1:length(fp_Number)
   GRFdata =  [GRFdata [data.fp_data.GRF_data(fp_Number(i)).P(:,2) data.fp_data.GRF_data(fp_Number(i)).P(:,3) data.fp_data.GRF_data(fp_Number(i)).P(:,1)]/p_sc];
   GRFdata =  [GRFdata [data.fp_data.GRF_data(fp_Number(i)).M(:,2) data.fp_data.GRF_data(fp_Number(i)).M(:,3) data.fp_data.GRF_data(fp_Number(i)).M(:,1)]/p_sc];
 end
+%Separates ground reaction forces onto each foot
+sGRFdata=SeparateGRF(MarkerData,GRFdata,Markerset);
+
 % data.fp_data.GRF_data.Time= data.fp_data.Time; 
 data.fp_data.Info(1).Filename=fname;  
 data.fp_data.Info(2).Filename=folder;  
 data.fp_data.Info(1).fp_Number=fp_Number;
-generate_GRF_Mot(GRFdata,data.fp_data.Info)
+generate_GRF_Mot(sGRFdata,data.fp_data.Info)
 
