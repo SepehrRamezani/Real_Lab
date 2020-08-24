@@ -116,8 +116,8 @@ hold off
 %Uses the gait cycle event data to separate GRF
 sGRFdata=zeros(size(GRFdata));
 sGRFdata(:,1)=GRFdata(:,1);%time data
-fweight=sqrt(GRFdata(:,2).^2+GRFdata(:,3).^2+GRFdata(:,4).^2)./(sqrt(GRFdata(:,2).^2+GRFdata(:,3).^2+GRFdata(:,4).^2)+sqrt(GRFdata(:,11).^2+GRFdata(:,12).^2+GRFdata(:,13).^2));
-bweight=sqrt(GRFdata(:,11).^2+GRFdata(:,12).^2+GRFdata(:,13).^2)./(sqrt(GRFdata(:,2).^2+GRFdata(:,3).^2+GRFdata(:,4).^2)+sqrt(GRFdata(:,11).^2+GRFdata(:,12).^2+GRFdata(:,13).^2));
+fweight=GRFdata(:,3)./(GRFdata(:,3)+GRFdata(:,12));
+bweight=GRFdata(:,12)./(GRFdata(:,3)+GRFdata(:,12));
 %determines starting feature and adds pre-event data
 if rhs(1)<lto(1) && rhs(1)<lhs(1) && rhs(1)<rto(1)
     intevent=1;%start rhs, pre-event left single stance
