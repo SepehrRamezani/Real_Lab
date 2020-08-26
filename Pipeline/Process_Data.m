@@ -1,7 +1,7 @@
 % Add btk library to MATLAB path  -> https://code.google.com/archive/p/b-tk/downloads
 clear all
 folder =[fileparts(mfilename('fullpath')) '\TestData\'];
-fname = 'Functional_Fast.c3d';
+fname = 'Functional_Slow.c3d';
 q=1;
 %% C3D file reading 
 data = c3d_getdata([folder fname]);
