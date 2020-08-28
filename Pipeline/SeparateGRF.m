@@ -52,11 +52,17 @@ for i=ceil(initialstrike/10)+5:length(MarkerData)
                 if MarkerData(i,rt*3-1)>MarkerData(i-1,rt*3-1) && MarkerData(i,rt*3-1)>MarkerData(i-2,rt*3-1) && MarkerData(i,rt*3-1)>MarkerData(i-3,rt*3-1)
                     rto=[rto i-2];
                     r=0;
+                    if MarkerData(i-2,lc*3-1) < 325 %checks if left heel is on back plate
+                        disp(['Late Right Toe Off Detected at ' num2str(length(rto)) 'th Toe Off, Time: ' num2str(MarkerData(i-2,1))]) 
+                    end
                 end
             elseif MarkerData(i,lc*3-1) < MarkerData(i,rc*3-1) %looking for left toe off
                 if MarkerData(i,lt*3-1)>MarkerData(i-1,lt*3-1) && MarkerData(i,lt*3-1)>MarkerData(i-2,lt*3-1) && MarkerData(i,lt*3-1)>MarkerData(i-3,lt*3-1)
                     lto=[lto i-2];
                     l=0;
+                    if MarkerData(i-2,rc*3-1) < 325 %checks if right heel is on back plate
+                        disp(['Late Left Toe Off Detected at ' num2str(length(lto)) 'th Toe Off, Time: ' num2str(MarkerData(i-2,1))])
+                    end
                 end
             end
         end
