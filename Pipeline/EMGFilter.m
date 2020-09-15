@@ -5,7 +5,7 @@ function [EMGfilt] = EMGFilter(EMGdata,hpvar,lpvar,bworder,samfreq)
 
 %High pass filter
 [bb,aa] = butter(bworder, hpvar/(samfreq/2),'high');
-datafilt=filtfilt(bb,aa,EMGdata);
+datafilt=filter(bb,aa,EMGdata);
 %Rectifying EMG data
 datafilt=abs(datafilt);
 %Low pass filter
