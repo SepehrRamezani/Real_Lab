@@ -40,7 +40,7 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="RSJC">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
@@ -76,7 +76,7 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="LSJC">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
@@ -130,13 +130,13 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="LHJC">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>100</weight>
 				</IKMarkerTask>
 				<IKMarkerTask name="RHJC">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>100</weight>
 				</IKMarkerTask>
@@ -318,11 +318,11 @@
 			<groups />
 		</IKTaskSet>
 		<!--TRC file (.trc) containing the time history of observations of marker positions obtained during a motion capture experiment. Markers in this file that have a corresponding task and model marker are included.-->
-		<marker_file>../Data/S1/Test3/Static_Functional2_Marker.trc</marker_file>
+		<marker_file />
 		<!--The name of the storage (.sto or .mot) file containing the time history of coordinate observations. Coordinate values from this file are included if there is a corresponding model coordinate and task. -->
 		<coordinate_file>Unassigned</coordinate_file>
 		<!--The desired time range over which inverse kinematics is solved. The closest start and final times from the provided observations are used to specify the actual time range to be processed.-->
-		<time_range> 16.88 16.89</time_range>
+		<time_range> 0.01 11.79</time_range>
 		<!--Flag (true or false) indicating whether or not to report marker errors from the inverse kinematics solution.-->
 		<report_errors>true</report_errors>
 		<!--Name of the resulting inverse kinematics motion (.mot) file.-->
