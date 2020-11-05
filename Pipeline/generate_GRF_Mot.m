@@ -28,5 +28,6 @@ fprintf(fid_2,'\n');
 fprintf(fid_2,[force_format '\n'],data');
 
 fclose(fid_2);
+fprintf('Saved Force Data to: %s\n',[Info(2).Filename FName]);
 
 
