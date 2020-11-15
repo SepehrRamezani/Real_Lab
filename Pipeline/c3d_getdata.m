@@ -1,7 +1,6 @@
 function data = c3d_getdata(file, grw_threshold)
 
-% function [marker_data, analog_data, fp_data, sub_info] = btk_loadc3d(file)
-%
+
 % Function to load the data from a c3d file into the structured array data.
 % The file may be excluded if you wish to choose it from a windows dialog
 % box
@@ -28,24 +27,8 @@ function data = c3d_getdata(file, grw_threshold)
 %           sub_info - extra data from the C3D file if it exists, inlcuding
 %               height and weight etc.
 %
-%
-% e.g. [marker_data] = btk_loadc3d('c:\data\Session_1\trial001.c3d') will only load the
-% marker data from the C3D file into a structured array called 'marker_data'
-%
-% [marker_data, a_data] = btk_loadc3d() will open a windows dialog box allowing
-% the user to find the file they want to open and load the reconstructed
-% data 
-%
-% Author: Glen Lichtwark (The University of Queensland)
-% Updated: 06/12/2011
 
-%
-% This function requires the installation of the BTK (Biomechanical
-% Toolkit) Matlab wrapper which must be added to the Matlab path. Please
-% ensure you install the correct wrapper for your operating platform (ie.
-% Windows, Mac etc) - please see http://code.google.com/p/b-tk/ for more
-% information and cite appropriately - 
-% further info at http://b-tk.googlecode.com/svn/doc/Matlab/0.1/index.html
+
 
 warning off
 
@@ -68,10 +51,6 @@ end
 
 % if file is c3d then load using the BTK matlab wrapper
 acq = btkReadAcquisition(file);
-
-
-
-
 % get marker data
 [markers, markersInfo] = btkGetMarkers(acq);
 marker_data.Markers = markers;
@@ -116,7 +95,6 @@ if ~isempty(fieldnames(analogs))
     % write to data structure
     data.analog_data = analog_data;
 end
-
 % get analog data
 [analogs, analogsInfo] = btkGetAnalogs(acq);
 if ~isempty(fieldnames(analogs))

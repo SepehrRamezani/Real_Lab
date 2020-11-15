@@ -1,5 +1,10 @@
 function Process_Data(fname,folder,ForceFlage,ForceComFlage,ForceplateNum)
-% Add btk directory to MATLAB path  -> https://code.google.com/archive/p/b-tk/downloads
+% This function requires the installation of the BTK (Biomechanical
+% Toolkit) Matlab wrapper which must be added to the Matlab path. Please
+% ensure you install the correct wrapper for your operating platform (ie.
+% Windows, Mac etc) - please see http://code.google.com/p/b-tk/ for more
+% information and cite appropriately - 
+% further info at http://b-tk.googlecode.com/svn/doc/Matlab/0.1/index.html
 %% C3D file reading 
 data = c3d_getdata([folder fname]);
 % for changing Vicon Axis to Opensim Axis NewAxis=OldeAxis*RMatrix, for
