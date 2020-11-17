@@ -322,7 +322,7 @@
 		<!--The name of the storage (.sto or .mot) file containing the time history of coordinate observations. Coordinate values from this file are included if there is a corresponding model coordinate and task. -->
 		<coordinate_file>Unassigned</coordinate_file>
 		<!--The desired time range over which inverse kinematics is solved. The closest start and final times from the provided observations are used to specify the actual time range to be processed.-->
-		<time_range> 0.01 11.79</time_range>
+		<time_range>-1 -1</time_range>
 		<!--Flag (true or false) indicating whether or not to report marker errors from the inverse kinematics solution.-->
 		<report_errors>true</report_errors>
 		<!--Name of the resulting inverse kinematics motion (.mot) file.-->
