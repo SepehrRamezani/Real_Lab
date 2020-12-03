@@ -5,7 +5,7 @@ clc;
  % save in FinalDatafor first time. readflage=1 means import files again.
 readflage= 0;
 % folder=uigetdir(); % get Data directory 
-folder='C:\MyCloud\OneDriveUcf\Real\Simulation\Source\T001\Data';
+folder='C:\Users\Joey Dranetz\Documents\GitHub\Real_Lab_JoeyFork\Pipeline\TestData';
 fname = 'P005_T001_RKnee_';
 Terials1=["Ex","Fl"];
 Terials2=["IsoK60","IsoK120","IsoK180","IsoK240","IsoM10","IsoM30","IsoM60","IsoM90"];
@@ -14,7 +14,7 @@ Terials2=["IsoK60","IsoK120","IsoK180","IsoK240","IsoM10","IsoM30","IsoM60","Iso
 Fdata=[];
 Gdata=[0];
 k=0;
-DStime=0.01; % desierd sampling time 
+DStime=0.0005192; % desired sampling time 
 %
 if readflage 
     for T1=1:length(Terials1)
@@ -63,7 +63,7 @@ save ([folder '\FinalData.mat'],'FinalData');
 
 end
 %%
-load ([folder '\FinalData.mat']);
+load ([folder '\FinalData2.mat']);
 Dataheadermotion=['time\tpelvis_tilt\tpelvis_tx\tpelvis_ty\thip_flexion_r\tknee_angle_r\tankle_angle_r'];
 Dataheaderforce=['time\treaction_force_vx\treaction_force_vy\treaction_force_vz\treaction_force_px\treaction_force_py\treaction_force_pz\treaction_torque_x\treaction_torque_y\treaction_torque_z'];
 DataheaderEMG=['time\t'];
@@ -107,7 +107,9 @@ for T1=1:length(Terials1)
 %             makefile(folder,F_fnames,Title,Titledata,Dataheaderforce,Datadata,5,delimiterIn);
            
 %% Process on EMG
-        EMGChecker(Data(:,ce(1)),HData(ce(1)));
+        for i=1:length(ce)
+            g=EMGChecker(Data(:,ce(i)),Namedr,HData(ce(i)),DStime);
+        end
         EMGfilt = EMGFilter(Data(:,ce),0.5,5,4,1/DStime);
 %% Save EMG
          delimiterIn=',';
@@ -133,7 +135,7 @@ for T1=1:length(Terials1)
          end
          Datadata=[Data(:,1),EMGfilt];
          Titledata=[r,length(Datadata(1,:))];
-         makefile (folder,F_fnames,Title,Titledata,DataheaderEMG,Datadata,8,delimiterIn);
+%          makefile (folder,F_fnames,Title,Titledata,DataheaderEMG,Datadata,8,delimiterIn);
     end
 end
 
