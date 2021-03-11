@@ -16,7 +16,7 @@ RMatrix=[0 0 1; ...
 %%% Giving marker names 
 Markerset=fieldnames(data.marker_data.Markers);
 %%% Remove Extra Markers
-Markerset=Markerset(strlength(Markerset)==4);
+Markerset=Markerset(~contains(Markerset,'C_'));
 %%% Or any new lables. So you can change your lable based on your model. Make sure they are in the same order of C3d file marker's lable %%%
 % Newmarkerlable={'LASI','RASI','LPSI','RPSI','LKNE','LTHI','LANK','LTIB','LTOE','LHEE','RKNE','RTHI','RANK','RTIB','RTOE','RHEE'};
 MarkerData=data.marker_data.Time;
