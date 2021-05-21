@@ -25,6 +25,12 @@ for i = 1:length(Markerset)
 end
 generate_Marker_Trc(Markerset,MarkerData,data.marker_data.Info);
 %% Generate GRF 
+%%% Getting Force plate information
+for i=1:length(ForceplateNum)
+%%% ForcePlate will nclude 4 corners of each force plate, First point is top left and it goes CW. 
+ForcePlate{i}=data.fp_data.FP_data(ForceplateNum(i)).corners'*RMatrix;
+end
+%%%
 if ForceFlage
 if strcmp(data.fp_data.Info(1).units.Moment_Mx1,'Nmm')
     p_sc = 1000;
