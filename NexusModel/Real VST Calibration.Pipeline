@@ -1,0 +1,107 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no" ?>
+<Pipeline>
+
+  <Entry DisplayName="Autolabel Static" Enabled="1" OperationId="280" OperationName="TPoseLabel">
+    <ParamList name="" version="1">
+      <Param macro="SELECTED_START_FRAME" name="FRAME"/>
+      <Param name="Tolerance" value="0.025000000000000001"/>
+      <Param name="SeparationDistance" value="1"/>
+      <Param name="ClearLabels" value="true"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="Scale Subject VSK" Enabled="1" OperationId="281" OperationName="ScaleSubject">
+    <ParamList name="">
+      <Param macro="SELECTED_START_FRAME" name="Frame"/>
+      <Param name="MinMarkerFraction" value="0.90000000000000002"/>
+      <Param name="ScalingImportance" value="1"/>
+      <Param name="ScalingFactor" value="1"/>
+      <Param name="OverwritePrior" value="true"/>
+      <Param name="RenderingMethod" value="0"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="Static Skeleton Calibration" Enabled="1" OperationId="282" OperationName="KinematicCalibrateStatic">
+    <ParamList name="" version="2">
+      <Param macro="CURRENT_MODEL" name="Model"/>
+      <Param macro="NOW" name="FirstFrame"/>
+      <Param macro="NOW" name="LastFrame"/>
+      <Param macro="SELECTED_START_FRAME" name="TPoseFrame"/>
+      <Param name="QualityOfFit" value="0"/>
+      <Param name="ActiveFrames" value="320"/>
+      <Param macro="AUTO_THREADS" name="NumThreads"/>
+      <Param name="FrameSelectionMode" value="2"/>
+      <Param name="MeanPoseImportance" value="1.0000000000000001e-05"/>
+      <Param name="JointPositionImportance" value="0.20000000000000001"/>
+      <Param name="MarkerPositionImportance" value="0.20000000000000001"/>
+      <Param name="UseParamPriors" value="true"/>
+      <Param name="UseTemplateStatistics" value="true"/>
+      <Param name="RemoveOptionalMarkers" value="true"/>
+      <Param name="RemoveConstraintMarkers" value="true"/>
+      <Param name="IgnoreConstraintMarkers" value="false"/>
+      <Param name="IgnoreMarkers" value=""/>
+      <Param name="TPoseMarkers" value=""/>
+      <Param name="CalibrationMode" value="0"/>
+      <Param name="ProcessingClip"/>
+      <Param name="CopyToClip"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="Functional Skeleton Calibration" Enabled="0" OperationId="182" OperationName="KinematicCalibrate">
+    <ParamList name="" version="3">
+      <Param macro="CURRENT_MODEL" name="Model"/>
+      <Param macro="SELECTED_START_FRAME" name="FirstFrame"/>
+      <Param macro="SELECTED_END_FRAME" name="LastFrame"/>
+      <Param macro="FIRST_FRAME" name="TPoseFrame"/>
+      <Param name="QualityOfFit" value="2"/>
+      <Param name="ActiveFrames" value="320"/>
+      <Param macro="AUTO_THREADS" name="NumThreads"/>
+      <Param name="FrameSelectionMode" value="2"/>
+      <Param name="MeanPoseImportance" value="1.0000000000000001e-05"/>
+      <Param name="JointPositionImportance" value="0.20000000000000001"/>
+      <Param name="MarkerPositionImportance" value="0.20000000000000001"/>
+      <Param name="UseParamPriors" value="true"/>
+      <Param name="UseTemplateStatistics" value="false"/>
+      <Param name="RemoveOptionalMarkers" value="true"/>
+      <Param name="RemoveConstraintMarkers" value="true"/>
+      <Param name="IgnoreConstraintMarkers" value="false"/>
+      <Param name="IgnoreMarkers" value=""/>
+      <Param name="TPoseMarkers" value=""/>
+      <Param name="CalibrationMode" value="0"/>
+      <Param name="ProcessingClip"/>
+      <Param name="CopyToClip"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="Functional Skeleton Calibration - Markers Only" Enabled="1" OperationId="283" OperationName="KinematicCalibrateMarkersOnly">
+    <ParamList name="">
+      <Param macro="CURRENT_MODEL" name="Model"/>
+      <Param macro="SELECTED_START_FRAME" name="FirstFrame"/>
+      <Param macro="SELECTED_END_FRAME" name="LastFrame"/>
+      <Param macro="FIRST_FULL_FRAME" name="TPoseFrame"/>
+      <Param name="QualityOfFit" value="0"/>
+      <Param name="ActiveFrames" value="320"/>
+      <Param macro="AUTO_THREADS" name="NumThreads"/>
+      <Param name="FrameSelectionMode" value="2"/>
+      <Param name="MeanPoseImportance" value="1.0000000000000001e-05"/>
+      <Param name="JointPositionImportance" value="0.20000000000000001"/>
+      <Param name="MarkerPositionImportance" value="0.20000000000000001"/>
+      <Param name="UseParamPriors" value="true"/>
+      <Param name="UseTemplateStatistics" value="false"/>
+      <Param name="RemoveOptionalMarkers" value="true"/>
+      <Param name="RemoveConstraintMarkers" value="true"/>
+      <Param name="IgnoreConstraintMarkers" value="false"/>
+      <Param name="IgnoreMarkers" value=""/>
+      <Param name="TPoseMarkers" value=""/>
+      <Param name="CalibrationMode" value="1"/>
+      <Param name="ProcessingClip"/>
+      <Param name="CopyToClip"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+</Pipeline>
