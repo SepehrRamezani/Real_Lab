@@ -1,0 +1,255 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no" ?>
+<Pipeline>
+
+  <Entry DisplayName="Torso" Enabled="1" OperationId="245" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="LABK,RABK,CLAV,CEV7,RACR,LACR"/>
+      <Param name="Trace" value="Torso"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="Pelvis" Enabled="1" OperationId="246" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="RASI,RPSI,LPSI,LASI"/>
+      <Param name="Trace" value="PelvisOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightThigh" Enabled="1" OperationId="247" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="RSAT,RLAT,RIAT,RLFC"/>
+      <Param name="Trace" value="RThighOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftThigh" Enabled="1" OperationId="248" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="SELECTED_START_FRAME" name="START_FRAME"/>
+      <Param macro="SELECTED_END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="LSAT,LIAT,LLAT,LLFC"/>
+      <Param name="Trace" value="LThighOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightShank" Enabled="1" OperationId="249" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="SELECTED_START_FRAME" name="START_FRAME"/>
+      <Param macro="SELECTED_END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="RFIB,RASH,RLML,RMML"/>
+      <Param name="Trace" value="RShankOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftShank" Enabled="1" OperationId="250" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="SELECTED_START_FRAME" name="START_FRAME"/>
+      <Param macro="SELECTED_END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="LFIB,LMML,LASH,LLML"/>
+      <Param name="Trace" value="LShankOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightFoot" Enabled="1" OperationId="251" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="SELECTED_START_FRAME" name="START_FRAME"/>
+      <Param macro="SELECTED_END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="RCAL,RMT5,RTOE"/>
+      <Param name="Trace" value="RFootOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftFoot" Enabled="1" OperationId="252" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="SELECTED_START_FRAME" name="START_FRAME"/>
+      <Param macro="SELECTED_END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="LCAL,LMT5,LTOE"/>
+      <Param name="Trace" value="LFootOC"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightUpperArm" Enabled="1" OperationId="253" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="RSAA,RIAA,RLHE,RMHE"/>
+      <Param name="Trace" value="RightUpperArm"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftUpperArm" Enabled="1" OperationId="254" OperationName="OCSTCalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="Markers" value="LSAA,LIAA,LLHE,LMHE"/>
+      <Param name="Trace" value="LeftUpperArm"/>
+      <Param name="Align" value="false"/>
+      <Param name="Corrected" value="false"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightHip" Enabled="1" OperationId="255" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FULL_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="PelvisOC"/>
+      <Param name="ChildTrace" value="RThighOC"/>
+      <Param name="SARAAxis" value="false"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftHip" Enabled="1" OperationId="256" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="LAST_FULL_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="PelvisOC"/>
+      <Param name="ChildTrace" value="LThighOC"/>
+      <Param name="SARAAxis" value="false"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightKnee" Enabled="1" OperationId="257" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="RThighOC"/>
+      <Param name="ChildTrace" value="RShankOC"/>
+      <Param name="SARAAxis" value="true"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftKnee" Enabled="1" OperationId="258" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="LThighOC"/>
+      <Param name="ChildTrace" value="LShankOC"/>
+      <Param name="SARAAxis" value="true"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RightAnkle" Enabled="1" OperationId="259" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="RShankOC"/>
+      <Param name="ChildTrace" value="RFootOC"/>
+      <Param name="SARAAxis" value="false"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LeftAnkle" Enabled="1" OperationId="260" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="LShankOC"/>
+      <Param name="ChildTrace" value="LFootOC"/>
+      <Param name="SARAAxis" value="false"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="RShoulder" Enabled="1" OperationId="261" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="Torso"/>
+      <Param name="ChildTrace" value="RightUpperArm"/>
+      <Param name="SARAAxis" value="false"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="LShoulder" Enabled="1" OperationId="262" OperationName="SCORECalibration">
+    <ParamList name="">
+      <Param macro="FIRST_FRAME" name="START_FRAME"/>
+      <Param macro="END_FRAME" name="LAST_FRAME"/>
+      <Param name="ParentTrace" value="Torso"/>
+      <Param name="ChildTrace" value="LeftUpperArm"/>
+      <Param name="SARAAxis" value="false"/>
+      <Param name="DOF" value="1"/>
+      <Param name="System" value="2"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+  <Entry DisplayName="Functional Skeleton Calibration" Enabled="1" OperationId="263" OperationName="KinematicCalibrate">
+    <ParamList name="" version="3">
+      <Param macro="CURRENT_MODEL" name="Model"/>
+      <Param macro="SELECTED_START_FRAME" name="FirstFrame"/>
+      <Param macro="SELECTED_END_FRAME" name="LastFrame"/>
+      <Param macro="FIRST_FULL_FRAME" name="TPoseFrame"/>
+      <Param name="QualityOfFit" value="0"/>
+      <Param name="ActiveFrames" value="320"/>
+      <Param macro="AUTO_THREADS" name="NumThreads"/>
+      <Param name="FrameSelectionMode" value="2"/>
+      <Param name="MeanPoseImportance" value="1.0000000000000001e-05"/>
+      <Param name="JointPositionImportance" value="0.20000000000000001"/>
+      <Param name="MarkerPositionImportance" value="0.20000000000000001"/>
+      <Param name="UseParamPriors" value="true"/>
+      <Param name="UseTemplateStatistics" value="false"/>
+      <Param name="RemoveOptionalMarkers" value="true"/>
+      <Param name="RemoveConstraintMarkers" value="true"/>
+      <Param name="IgnoreConstraintMarkers" value="false"/>
+      <Param name="IgnoreMarkers" value=""/>
+      <Param name="TPoseMarkers" value=""/>
+      <Param name="CalibrationMode" value="0"/>
+      <Param name="ProcessingClip"/>
+      <Param name="CopyToClip"/>
+      <Param macro="ACTIVE_SUBJECTS" name="SUBJECTS"/>
+    </ParamList>
+  </Entry>
+
+</Pipeline>

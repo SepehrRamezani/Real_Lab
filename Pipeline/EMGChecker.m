@@ -1,7 +1,7 @@
-function [] = EMGChecker(EMGdata,colname)
+function [g] = EMGChecker(EMGdata,tname,colname,si)
 %The function inputs a vector of raw EMG and its header and checks it for errors
 
-samfreq=2000;
+samfreq=1/si;
 l=length(EMGdata);
 g=0;
 
@@ -13,25 +13,25 @@ P1(2:end-1) = 2*P1(2:end-1);
 f = samfreq*(0:floor(l/2))/l;
 
 %checks
-if mean(P1(sum(f<20):sum(f<100)))<2*mean(P1(sum(f<200):sum(f<500)))
-    warning(['poor signal to noise ratio, check sensor connectivity of ' colname])
+if mean(P1(sum(f<20):sum(f<100)))<5*mean(P1(sum(f<200):sum(f<500)))
+    warning('poor signal to noise ratio at %s, check sensor connectivity of %s', tname, colname)
     g=1;
-elseif mean(P1(sum(f<20):sum(f<150)))<2*mean(P1(1:sum(f<20)))
-    warning(['low frequency motion artifact detected in ' colname])
-    g=1;
+elseif median(P1(sum(f<20):sum(f<100)))<2*median(P1(1:sum(f<15)))
+    warning('low frequency motion artifact at %s, detected in %s', tname, colname)
+    g=2;
 end
 
 %plot if check flagged
-if g==1
+if g==1||g==2
     figure
     subplot(2,1,1)
     plot(1:length(EMGdata),EMGdata)
-    title([colname ' Raw EMG'])
+    title([tname colname ' Raw EMG'])
     subplot(2,1,2)
     plot(f,P1)
-    title(['Single-Sided Amplitude Spectrum of ' colname])
+    title(['Single-Sided Amplitude Spectrum of ' tname colname])
     xlabel('f (Hz)')
     ylabel('|P1(f)|')
-    axis([0 1000 0 max(P1)])
+    axis([0 300 0 10^-6])
 end
 end
