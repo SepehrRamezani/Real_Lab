@@ -1,4 +1,4 @@
-function [sGRFdata] = SeparateGRF(MarkerData,GRFdata,Markerset)
+function [sGRFdata] = TM_SeparateGRF(MarkerData,GRFdata,Markerset)
 %SeparateGRF function separate ground reaction force data into forces onto
 %each foot
 

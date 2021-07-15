@@ -46,16 +46,22 @@ for i = 1:length(fp_Number)
   GRFdata =  [GRFdata [data.fp_data.GRF_data(fp_Number(i)).P*RMatrix]/p_sc];
   GRFdata =  [GRFdata [data.fp_data.GRF_data(fp_Number(i)).M*RMatrix]/p_sc];
 end
+
 %Separates ground reaction forces onto each foot
-    if ForceComFlage
-        sGRFdata=SeparateGRF(MarkerData,GRFdata,Markerset);
-    else
+switch ForceComFlage
+    case 2
+        sGRFdata=TM_SeparateGRF(MarkerData,GRFdata,Markerset);
+        data.fp_data.Info(1).fp_Number=[4,5];
+    case 1
+        sGRFdata=OG_SeparateGRF(MarkerData,GRFdata,Markerset,ForceplateNum,ForcePlate);
+        data.fp_data.Info(1).fp_Number=[1,2];
+    case 0
         sGRFdata=GRFdata;
-    end
+        data.fp_data.Info(1).fp_Number=fp_Number;
+end
 % data.fp_data.GRF_data.Time= data.fp_data.Time; 
 data.fp_data.Info(1).Filename=fname;  
 data.fp_data.Info(2).Filename=folder;  
-data.fp_data.Info(1).fp_Number=fp_Number;
 generate_GRF_Mot(sGRFdata,data.fp_data.Info)
 end
 end
