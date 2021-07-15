@@ -31,7 +31,7 @@ for i=1:length(ForceplateNum)
 ForcePlate{i}=data.fp_data.FP_data(ForceplateNum(i)).corners'*RMatrix;
 end
 %%%
-if ForceFlage
+if ~ForceFlage
 if strcmp(data.fp_data.Info(1).units.Moment_Mx1,'Nmm')
     p_sc = 1000;
 %     data.fp_data.Info(:).units.Moment_Mx1 = 'Nm';
