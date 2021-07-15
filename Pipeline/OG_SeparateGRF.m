@@ -5,6 +5,9 @@ function [sgrf] = OG_SeparateGRF(MarkerData,GRFdata,Markerset,ForceplateNum,Forc
   MT5_margin = 30;
   MML_margin = 30;
   TOE_margin = 10;
+  m_interval=MarkerData(2,1)-MarkerData(1,1);
+  fp_interval=GRFdata(2,1)-GRFdata(1,1);
+  freq_scale=m_interval./fp_interval;
   
 for i=1:length(Markerset)
     if strcmp(Markerset(i),{'RCAL'})
@@ -25,17 +28,17 @@ for i=1:length(Markerset)
         rmt5 = i;
     end
 end
-xf1=GRFdata(1,5);
-zf1=GRFdata(1,7);
-xf2=GRFdata(1,14);
-zf2=GRFdata(1,16);
-GRFdata(:,5)=GRFdata(:,5)+xf2-xf1;
-GRFdata(:,7)=GRFdata(:,7)+zf2-zf1;
-GRFdata(:,14)=GRFdata(:,14)+xf1-xf2;
-GRFdata(:,16)=GRFdata(:,16)+zf1-zf2;
-corn=ForcePlate{1};
-ForcePlate{1}=ForcePlate{2};
-ForcePlate{2}=corn;
+% xf1=GRFdata(1,5); old code that swapped plates 1 and 2 to fix a vicon     
+% zf1=GRFdata(1,7); issue in OG testing data
+% xf2=GRFdata(1,14);
+% zf2=GRFdata(1,16);
+% GRFdata(:,5)=GRFdata(:,5)+xf2-xf1;
+% GRFdata(:,7)=GRFdata(:,7)+zf2-zf1;
+% GRFdata(:,14)=GRFdata(:,14)+xf1-xf2;
+% GRFdata(:,16)=GRFdata(:,16)+zf1-zf2;
+% corn=ForcePlate{1};
+% ForcePlate{1}=ForcePlate{2};
+% ForcePlate{2}=corn;
 for c = ForceplateNum
     a = 0; fp{c}=[];
     for i = 1:length(GRFdata)
@@ -121,13 +124,13 @@ for c = 1: length(ForceplateNum)
         a=0; b=0;
         for j = 1:2:length(rf{c})
 %If rf enters before fp is on and leaves after fp deactivated
-            if rf{c}(j) * 10 - 1 < fp{c}(i) && rf{c}(j+1) * 10 - 1 > fp{c}(i+1)
+            if rf{c}(j) * freq_scale - 1 < fp{c}(i) && rf{c}(j+1) * freq_scale - 1 > fp{c}(i+1)
                 a = 1;
                 rind=j;
             end
         end
         for k = 1:2:length(lf{c})
-            if lf{c}(k) * 10 - 1 < fp{c}(i) && lf{c}(k+1) * 10 - 1 > fp{c}(i+1)
+            if lf{c}(k) * freq_scale - 1 < fp{c}(i) && lf{c}(k+1) * freq_scale - 1 > fp{c}(i+1)
                 b = 1;
                 lind=k;
             end
