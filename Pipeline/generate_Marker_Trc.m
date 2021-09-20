@@ -104,5 +104,5 @@ for i = 1:NumFrames
 end
 
 fclose(fid);
-fprintf('Saved (tab delimited) marker positions to: %s\n', name);
+fprintf('Saved marker positions to: %s\n', name);
 
