@@ -12,7 +12,7 @@ data = c3d_getdata([folder fname]);
 RMatrix=[0 0 1; ...
     1 0 0; ...
     0 1 0];
-if MotionFlag
+
  
 %% Generate .Trc for Marker set
 %%% Giving marker names
@@ -25,6 +25,7 @@ MarkerData=data.marker_data.Time;
 for i = 1:length(Markerset)
     MarkerData =[MarkerData data.marker_data.Markers.(Markerset{i})*RMatrix];
 end
+if MotionFlag
 generate_Marker_Trc(Markerset,MarkerData,data.marker_data.Info);
 end
 %% Generate GRF
