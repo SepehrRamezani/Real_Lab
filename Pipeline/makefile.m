@@ -1,6 +1,6 @@
 function makefile (folder,F_fnames,Title,Titledata,Dataheader,Datadata,Resulotion,delimiterIn)
 % Resulotion number of digit after zero
-           fid=fopen(append(folder,'\',F_fnames), "w");
+           fid=fopen(append(folder,F_fnames), "w");
             if fid < 0
                 fprintf('\nERROR: %s could not be opened for writing...\n\n', fname);
             return
@@ -21,5 +21,5 @@ function makefile (folder,F_fnames,Title,Titledata,Dataheader,Datadata,Resulotio
                     fprintf(fid, '\n');
                 end
             fclose(fid);
-            fprintf('Saved %s\n', append(folder,'\',F_fnames))
+            fprintf('Saved %s\n', append(folder,F_fnames))
 end
