@@ -80,8 +80,10 @@ if  EMGFlag
     for k=1:length(EMG_header_s)
         EMGdata(:,k)=data.analog_data.Channels.(EMG_header_s(k));
     end
+    EMG_header_s=["time";EMG_header_s];
+    EMGdata=[data.analog_data.Time EMGdata];
     delimiterIn=',';
-    EMGfname=strrep(fname,'.c3d','.csv');
+    EMGfname=strrep(fname,'.c3d','_EMG.csv');
     makefile(folder,EMGfname,[],[],EMG_header_s,EMGdata,8,delimiterIn);
 end
 end
